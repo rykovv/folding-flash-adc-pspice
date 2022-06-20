@@ -1,0 +1,305 @@
+
+**** 03/01/10 17:31:34 ****** PSpice 16.0.0 (March 2008) ****** ID# 1623744 **
+
+ ** Profile: "SCHEMATIC1-testac"  [ C:\Documents and Settings\pheedley\My Documents\PSpice\examples\eee230\DIFFAMPS\diffamp_Nin_Rload
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "testac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../diffamp_nin_rload-pspicefiles/diffamp_nin_rload.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.01\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1k 10G
+.OP
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DIFFAMP_NIN_RLOAD
+E_Eon         VX VSSA VON VSSA -1
+C_CL2         VSSA VOP  {cl}  TC=0,0 
+M_M1         VON VIP VTAIL VSSA N  
++ L={l1}  
++ W={w1}          
++ M={m1}
+V_Vdda         VDDA 0 {vdda}
+E_Eicm         VCMIN VSSA VICM VSSA 1
+R_RL2         VOP VDDA  {rl} TC=0,0 
+M_M2         VOP VIN VTAIL VSSA N  
++ L={l1}  
++ W={w1}          
++ M={m1}
+E_Eip         VIP VCMIN VIDM VSSA 0.5
+I_Ibias         VDDA VBIAS DC {ibias}  
+V_Vssa         VSSA 0 {vssa}
+R_RL1         VON VDDA  {rl} TC=0,0 
+M_M3         VTAIL VBIAS VSSA VSSA N  
++ L={l4}  
++ W={w4}          
++ M={m3}
+V_VScm         VICM 0 DC {vidc} AC 0
++PULSE {vidc} {vidc} {td+1} {tr} {tr} {pw} {per}
+C_CL1         VSSA VON  {cl}  TC=0,0 
+E_Ein         VIN VCMIN VIDM VSSA -0.5
+V_VSdm         VIDM 0 DC 0 AC 1
++PULSE {vs1} {vs2} {td} {tr} {tr} {pw} {per}
+E_Eop         VODM VX VOP VSSA 1
+M_M4         VBIAS VBIAS VSSA VSSA N  
++ L={l4}  
++ W={w4}          
++ M={m4}
+.PARAM  w4=4.0u vs1={(vstep/2)*(-1)} td={per/2} vs2={(vstep/2)} vidc=
++ {(vdda+vssa)/2} per=5000ns pw={per/2 - tr} m1=2 l1=0.5u cl=2pf m3=16 m4=2
++  rl=10k ibias=25u vstep=20m l4=2.0u vdda=5.0 vssa=0.0 w1=4.0u tr={0.01*per}
+
+**** RESUMING testac.cir ****
+.END
+
+Mosfet M_M1, model N: Using BSIM VERSION 3.1 or lower
+WARNING -- Mosfet M_M1, model N: Pd = 0 is less than W
+WARNING -- Mosfet M_M1, model N: Ps = 0 is less than W
+WARNING -- Parameter XL in model N is invalid - Ignored
+Mosfet M_M3, model N: Using BSIM VERSION 3.1 or lower
+WARNING -- Mosfet M_M3, model N: Pd = 0 is less than W
+WARNING -- Mosfet M_M3, model N: Ps = 0 is less than W
+**** 03/01/10 17:31:34 ****** PSpice 16.0.0 (March 2008) ****** ID# 1623744 **
+
+ ** Profile: "SCHEMATIC1-testac"  [ C:\Documents and Settings\pheedley\My Documents\PSpice\examples\eee230\DIFFAMPS\diffamp_Nin_Rload
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               N               
+               NMOS            
+  T_Measured   27            
+   T_Current   27            
+       LEVEL    7            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .640222     
+          KP  146.942300E-06 
+       GAMMA    0            
+      LAMBDA    0            
+         RSH   87.5          
+          IS    1.000000E-15 
+          JS  100.000000E-06 
+          PB     .843214     
+        PBSW     .8          
+          CJ  416.510600E-06 
+        CJSW  352.157400E-12 
+          MJ     .430423     
+        MJSW     .197086     
+        CGSO  180.000000E-12 
+        CGDO  180.000000E-12 
+        CGBO    1.000000E-09 
+         TOX   14.100000E-09 
+          XJ  150.000000E-09 
+       UCRIT   10.000000E+03 
+       DELTA     .01         
+      DIOMOD    2            
+          K1     .876828     
+          K2    -.098982     
+        LETA    0            
+        WETA    0            
+          U0  462.3052       
+       XPART     .5          
+        VTH0     .640222     
+          K3   26.54597      
+          W0   10.424820E-09 
+         NLX    1.000000E-09 
+        DVT0     .770314     
+        DVT1     .36159      
+          UA  131.719200E-15 
+          UB    1.713723E-18 
+          UC -393.568000E-15 
+        VSAT  191.903600E+03 
+        RDSW    1.156129E+03 
+        VOFF -134.891200E-06 
+     NFACTOR    1.198775     
+        PCLM    2.700464     
+      PDIBL1    1.244175E-03 
+      PDIBL2    2.088586E-03 
+       DROUT     .039871     
+      PSCBE1  648.314600E+06 
+      PSCBE2  265.218800E-06 
+          A0     .667971     
+          A1    1.722697E-06 
+          A2     .3          
+       NPEAK  170.000000E+15 
+         LDD    0            
+        LITL   79.655510E-09 
+         UC1  -56.000000E-12 
+        KETA   -3.607594E-03 
+        ETA0    4.654873E-03 
+        ETAB  336.920100E-06 
+         K3B   -8.757671     
+        DVT2    -.5          
+        DSUB     .147826     
+         AGS     .145809     
+       DVT1W    0            
+       DVT2W    0            
+        PRWG     .080522     
+        PRWB     .015253     
+     PDIBLCB    -.026628     
+         DWG  -17.255320E-09 
+         DWB   43.293260E-09 
+          B0    2.204050E-06 
+          B1    5.000000E-06 
+        LINT   75.368210E-09 
+        WINT  255.020900E-09 
+         DLC   75.368210E-09 
+         DWC  255.020900E-09 
+          CF    0            
+        NOIA  100.000000E+18 
+        NOIB   50.000000E+03 
+        NOIC   -1.400000E-12 
+       LKETA  -81.729160E-06 
+       WKETA   -8.269203E-03 
+       PVTH0    -.093866     
+       PRDSW  416.8905       
+         PK2    -.074131     
+         VTM     .025864     
+       PBSWG     .8          
+       MJSWG     .197086     
+       CJSWG  164.000000E-12 
+
+
+Mosfet M_M1, model N: Using BSIM VERSION 3.1 or lower
+WARNING -- Mosfet M_M1, model N: Pd = 0 is less than W
+WARNING -- Mosfet M_M1, model N: Ps = 0 is less than W
+WARNING -- Parameter XL in model N is invalid - Ignored
+Mosfet M_M3, model N: Using BSIM VERSION 3.1 or lower
+WARNING -- Mosfet M_M3, model N: Pd = 0 is less than W
+WARNING -- Mosfet M_M3, model N: Ps = 0 is less than W
+**** 03/01/10 17:31:34 ****** PSpice 16.0.0 (March 2008) ****** ID# 1623744 **
+
+ ** Profile: "SCHEMATIC1-testac"  [ C:\Documents and Settings\pheedley\My Documents\PSpice\examples\eee230\DIFFAMPS\diffamp_Nin_Rload
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VX)   -3.9895  (  VIN)    2.5000  (  VIP)    2.5000  (  VON)    3.9895      
+
+(  VOP)    3.9895  ( VDDA)    5.0000  ( VICM)    2.5000  ( VIDM)    0.0000      
+
+( VODM)-3.553E-15  ( VSSA)    0.0000  (VBIAS)    1.1097  (VCMIN)    2.5000      
+
+(VTAIL)    1.4054  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdda      -2.271E-04
+    V_Vssa       2.271E-04
+    V_VScm       0.000E+00
+    V_VSdm       0.000E+00
+
+    TOTAL POWER DISSIPATION   1.14E-03  WATTS
+
+
+**** 03/01/10 17:31:34 ****** PSpice 16.0.0 (March 2008) ****** ID# 1623744 **
+
+ ** Profile: "SCHEMATIC1-testac"  [ C:\Documents and Settings\pheedley\My Documents\PSpice\examples\eee230\DIFFAMPS\diffamp_Nin_Rload
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E_Eon       E_Eicm      E_Eip       E_Ein       E_Eop     
+V-SOURCE    -3.989E+00   2.500E+00   0.000E+00   0.000E+00   3.989E+00
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+
+**** MOSFETS
+
+
+NAME         M_M1        M_M2        M_M3        M_M4      
+MODEL        N           N           N           N         
+ID           1.01E-04    1.01E-04    2.02E-04    2.50E-05 
+VGS          1.09E+00    1.09E+00    1.11E+00    1.11E+00 
+VDS          2.58E+00    2.58E+00    1.41E+00    1.11E+00 
+VBS         -1.41E+00   -1.41E+00    0.00E+00    0.00E+00 
+VTH          7.95E-01    7.95E-01    7.15E-01    7.15E-01 
+VDSAT        2.06E-01    2.06E-01    2.86E-01    2.86E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           7.42E-04    7.42E-04    1.16E-03    1.44E-04 
+GDS          8.00E-06    8.00E-06    6.32E-06    1.02E-06 
+GMB          7.71E-05    7.71E-05    4.06E-04    5.03E-05 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        1.44E-15    1.44E-15    1.15E-14    1.44E-15 
+CGDOV        1.44E-15    1.44E-15    1.15E-14    1.44E-15 
+CGBOV        5.00E-16    5.00E-16    2.00E-15    2.00E-15 
+ Derivatives of gate (dQg/dVxy) and bulk (dQb/dVxy) charges
+DQGDVGB      8.04E-15    8.04E-15    2.52E-13    3.16E-14 
+DQGDVDB     -1.23E-15   -1.23E-15   -9.96E-15   -1.25E-15 
+DQGDVSB     -4.91E-15   -4.91E-15   -1.75E-13   -2.19E-14 
+DQDDVGB     -3.25E-15   -3.25E-15   -9.44E-14   -1.18E-14 
+DQDDVDB      1.24E-15    1.24E-15    1.00E-14    1.26E-15 
+DQDDVSB      2.22E-15    2.22E-15    1.18E-13    1.47E-14 
+DQBDVGB     -1.55E-15   -1.55E-15   -6.36E-14   -7.95E-15 
+DQBDVDB     -5.07E-18   -5.07E-18   -2.93E-17   -5.66E-18 
+DQBDVSB     -7.90E-16   -7.90E-16   -7.02E-14   -8.78E-15 
+
+          JOB CONCLUDED
+
+**** 03/01/10 17:31:34 ****** PSpice 16.0.0 (March 2008) ****** ID# 1623744 **
+
+ ** Profile: "SCHEMATIC1-testac"  [ C:\Documents and Settings\pheedley\My Documents\PSpice\examples\eee230\DIFFAMPS\diffamp_Nin_Rload
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .22
+

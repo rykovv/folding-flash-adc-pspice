@@ -1,0 +1,300 @@
+
+**** 03/31/10 15:27:19 ****** PSpice 16.0.0 (March 2008) ****** ID# 1628008 **
+
+ ** Profile: "SCHEMATIC1-testtran"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "testtran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../interp1-pspicefiles/interp1.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.01\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN/OP  0 {(per/4)} 0 0.5ns 
+------------$
+ERROR -- Invalid number
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INTERP1
+E_Eo7         VODM7 VSSA VOP7 VON7 1
+E_Eo6b         VODM6B VSSA VOP6B VON6B 1
+R_R5pa         VOP5A VOP5  {ravg} TC=0,0 
+R_R2na         VON2A VON2  {ravg} TC=0,0 
+R_R6na         VON6A VON6  {ravg} TC=0,0 
+C_C6n         VSSA VON6  {cl}  TC=0,0 
+E_Ein6         VIN6 VICM VIDM VREF6 -0.5
+E_Ein2         VIN2 VICM VIDM VREF2 -0.5
+C_C4n         VSSA VON4  {cl}  TC=0,0 
+C_C2p         VSSA VOP2  {cl}  TC=0,0 
+R_R4na         VON4A VON4  {ravg} TC=0,0 
+E_Eo7c         VODM7C VSSA VOP7C VON7C 1
+R_R1pd         VOP2 VOP1C  {ravg} TC=0,0 
+R_Rss6         VSSA VT6  {rss} TC=0,0 
+C_C6pb         VSSA VOP6B  {cl}  TC=0,0 
+R_R0nb         VON0B VON0A  {ravg} TC=0,0 
+R_R3pc         VOP3C VOP3B  {ravg} TC=0,0 
+R_R7nb         VON7B VON7A  {ravg} TC=0,0 
+C_C2n         VSSA VON2  {cl}  TC=0,0 
+E_Ein4         VIN4 VICM VIDM VREF4 -0.5
+E_Eo2a         VODM2A VSSA VOP2A VON2A 1
+R_R7n         VON7 VDDA  {rl} TC=0,0 
+C_C4na         VSSA VON4A  {cl}  TC=0,0 
+E_Eo5b         VODM5B VSSA VOP5B VON5B 1
+M_M5b         VOP5 VIN5 VT5 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+V_Vol         VDDA VOL {iss1*rl}
+R_R4nb         VON4B VON4A  {ravg} TC=0,0 
+E_Eo4c         VODM4C VSSA VOP4C VON4C 1
+R_R5pb         VOP5B VOP5A  {ravg} TC=0,0 
+R_R2nb         VON2B VON2A  {ravg} TC=0,0 
+C_C2pa         VSSA VOP2A  {cl}  TC=0,0 
+C_C6na         VSSA VON6A  {cl}  TC=0,0 
+R_R6nb         VON6B VON6A  {ravg} TC=0,0 
+C_C6pc         VSSA VOP6C  {cl}  TC=0,0 
+R_R5n         VON5 VDDA  {rl} TC=0,0 
+R_R0nc         VON0C VON0B  {ravg} TC=0,0 
+R_R7nc         VON7C VON7B  {ravg} TC=0,0 
+C_C2na         VSSA VON2A  {cl}  TC=0,0 
+E_Eo1         VODM1 VSSA VOP1 VON1 1
+M_M1a         VON1 VIP1 VT1 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+E_Eo3         VODM3 VSSA VOP3 VON3 1
+R_R3pd         VOP4 VOP3C  {ravg} TC=0,0 
+E_Eip3         VIP3 VICM VIDM VREF3 0.5
+C_C6nb         VSSA VON6B  {cl}  TC=0,0 
+R_R4nc         VON4C VON4B  {ravg} TC=0,0 
+E_Eo0b         VODM0B VSSA VOP0B VON0B 1
+R_R5pc         VOP5C VOP5B  {ravg} TC=0,0 
+C_C1n         VSSA VON1  {cl}  TC=0,0 
+R_R2nc         VON2C VON2B  {ravg} TC=0,0 
+R_R7p         VOP7 VDDA  {rl} TC=0,0 
+M_M4a         VON4 VIP4 VT4 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R6nc         VON6C VON6B  {ravg} TC=0,0 
+I_Iss5         VT5 VSSA DC {iss5}  
+C_C4nb         VSSA VON4B  {cl}  TC=0,0 
+C_C2pb         VSSA VOP2B  {cl}  TC=0,0 
+C_C4p         VSSA VOP4  {cl}  TC=0,0 
+E_Eo6c         VODM6C VSSA VOP6C VON6C 1
+E_Eo7b         VODM7B VSSA VOP7B VON7B 1
+R_R5p         VOP5 VDDA  {rl} TC=0,0 
+C_C2nb         VSSA VON2B  {cl}  TC=0,0 
+V_Vdda         VDDA 0 {vdda}
+R_R2pa         VOP2A VOP2  {ravg} TC=0,0 
+R_R2n         VON2 VDDA  {rl} TC=0,0 
+C_C6nc         VSSA VON6C  {cl}  TC=0,0 
+C_C4nc         VSSA VON4C  {cl}  TC=0,0 
+R_R4nd         VON5 VON4C  {ravg} TC=0,0 
+R_R0nd         VON1 VON0C  1e12 TC=0,0 
+C_C1na         VSSA VON1A  {cl}  TC=0,0 
+C_C2pc         VSSA VOP2C  {cl}  TC=0,0 
+C_C4pa         VSSA VOP4A  {cl}  TC=0,0 
+E_Eo2b         VODM2B VSSA VOP2B VON2B 1
+R_R7nd         VDDA VON7C  {ravg} TC=0,0 
+E_Eo4         VODM4 VSSA VOP4 VON4 1
+R_R5pd         VOP6 VOP5C  {ravg} TC=0,0 
+R_R2nd         VON3 VON2C  {ravg} TC=0,0 
+C_C5p         VSSA VOP5  {cl}  TC=0,0 
+E_Eo5c         VODM5C VSSA VOP5C VON5C 1
+C_C2nc         VSSA VON2C  {cl}  TC=0,0 
+C_C1p         VSSA VOP1  {cl}  TC=0,0 
+M_M4b         VOP4 VIN4 VT4 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+E_Eo1c         VODM1C VSSA VOP1C VON1C 1
+R_R2p         VOP2 VDDA  {rl} TC=0,0 
+R_R6nd         VON7 VON6C  {ravg} TC=0,0 
+E_Eip5         VIP5 VICM VIDM VREF5 0.5
+M_M7a         VON7 VIP7 VT7 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R6n         VON6 VDDA  {rl} TC=0,0 
+E_Eo1b         VODM1B VSSA VOP1B VON1B 1
+R_R1p         VOP1 VDDA  {rl} TC=0,0 
+E_Eip7         VIP7 VICM VIDM VREF7 0.5
+R_R2pb         VOP2B VOP2A  {ravg} TC=0,0 
+M_M1b         VOP1 VIN1 VT1 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+C_C1nb         VSSA VON1B  {cl}  TC=0,0 
+R_Rss5         VSSA VT5  {rss} TC=0,0 
+E_Eip1         VIP1 VICM VIDM VREF1 0.5
+C_C4pb         VSSA VOP4B  {cl}  TC=0,0 
+C_C1pc         VSSA VOP1C  {cl}  TC=0,0 
+R_R7pa         VOP7A VOP7  1e12 TC=0,0 
+E_Eo1a         VODM1A VSSA VOP1A VON1A 1
+M_M2a         VON2 VIP2 VT2 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+V_Vref7         VREF7 VSSA {vref7}
+C_C5pa         VSSA VOP5A  {cl}  TC=0,0 
+E_Eo6         VODM6 VSSA VOP6 VON6 1
+E_Eo7a         VODM7A VSSA VOP7A VON7A 1
+E_Eo0c         VODM0C VSSA VOP0C VON0C 1
+I_Iss4         VT4 VSSA DC {iss4}  
+R_R2pc         VOP2C VOP2B  {ravg} TC=0,0 
+R_R6p         VOP6 VDDA  {rl} TC=0,0 
+V_Vref6         VREF6 VSSA {vref6}
+C_C1nc         VSSA VON1C  {cl}  TC=0,0 
+M_M7b         VOP7 VIN7 VT7 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+C_C5pb         VSSA VOP5B  {cl}  TC=0,0 
+C_C4pc         VSSA VOP4C  {cl}  TC=0,0 
+M_M3a         VON3 VIP3 VT3 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+I_Iss1         VT1 VSSA DC {iss1}  
+R_R4n         VON4 VDDA  {rl} TC=0,0 
+R_R4pa         VOP4A VOP4  {ravg} TC=0,0 
+R_R1na         VON1A VON1  {ravg} TC=0,0 
+C_C1pb         VSSA VOP1B  {cl}  TC=0,0 
+R_R5na         VON5A VON5  {ravg} TC=0,0 
+R_R6pa         VOP6A VOP6  {ravg} TC=0,0 
+V_Vssa         VSSA 0 {vssa}
+R_R3na         VON3A VON3  {ravg} TC=0,0 
+R_R7pb         VOP7B VOP7A  {ravg} TC=0,0 
+C_C5n         VSSA VON5  {cl}  TC=0,0 
+E_Eo5         VODM5 VSSA VOP5 VON5 1
+R_R0pa         VOP0A VDDA  {ravg} TC=0,0 
+E_Ein3         VIN3 VICM VIDM VREF3 -0.5
+M_M2b         VOP2 VIN2 VT2 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_Rss1         VSSA VT1  {rss} TC=0,0 
+R_R2pd         VOP3 VOP2C  {ravg} TC=0,0 
+E_Eo2c         VODM2C VSSA VOP2C VON2C 1
+E_Eo3a         VODM3A VSSA VOP3A VON3A 1
+C_C7p         VSSA VOP7  {cl}  TC=0,0 
+R_R1n         VON1 VDDA  {rl} TC=0,0 
+C_C5pc         VSSA VOP5C  {cl}  TC=0,0 
+R_R4p         VOP4 VDDA  {rl} TC=0,0 
+C_C1pa         VSSA VOP1A  {cl}  TC=0,0 
+R_R7pc         VOP7C VOP7B  {ravg} TC=0,0 
+C_C5na         VSSA VON5A  {cl}  TC=0,0 
+R_R4pb         VOP4B VOP4A  {ravg} TC=0,0 
+R_Rss4         VSSA VT4  {rss} TC=0,0 
+M_M3b         VOP3 VIN3 VT3 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+M_M6a         VON6 VIP6 VT6 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R1nb         VON1B VON1A  {ravg} TC=0,0 
+I_Iss7         VT7 VSSA DC {iss7}  
+R_R5nb         VON5B VON5A  {ravg} TC=0,0 
+R_R6pb         VOP6B VOP6A  {ravg} TC=0,0 
+E_Eip6         VIP6 VICM VIDM VREF6 0.5
+R_R3nb         VON3B VON3A  {ravg} TC=0,0 
+I_Iss2         VT2 VSSA DC {iss2}  
+R_R0pb         VOP0B VOP0A  {ravg} TC=0,0 
+E_Eip2         VIP2 VICM VIDM VREF2 0.5
+E_Eo4a         VODM4A VSSA VOP4A VON4A 1
+R_R1pb         VOP1B VOP1A  {ravg} TC=0,0 
+C_C3n         VSSA VON3  {cl}  TC=0,0 
+E_Ein5         VIN5 VICM VIDM VREF5 -0.5
+R_R4pc         VOP4C VOP4B  {ravg} TC=0,0 
+R_R1nc         VON1C VON1B  {ravg} TC=0,0 
+V_Vicm         VICM VSSA {vicm}
+C_C5nb         VSSA VON5B  {cl}  TC=0,0 
+R_R5nc         VON5C VON5B  {ravg} TC=0,0 
+C_C7n         VSSA VON7  {cl}  TC=0,0 
+R_R6pc         VOP6C VOP6B  {ravg} TC=0,0 
+R_R3nc         VON3C VON3B  {ravg} TC=0,0 
+I_Iss3         VT3 VSSA DC {iss3}  
+R_R0pc         VOP0C VOP0B  {ravg} TC=0,0 
+C_C3p         VSSA VOP3  {cl}  TC=0,0 
+E_Eo2         VODM2 VSSA VOP2 VON2 1
+M_M6b         VOP6 VIN6 VT6 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R7pd         VOL VOP7C  {ravg} TC=0,0 
+E_Eip4         VIP4 VICM VIDM VREF4 0.5
+V_Vref1         VREF1 VSSA {vref1}
+E_Ein7         VIN7 VICM VIDM VREF7 -0.5
+V_Vref5         VREF5 VSSA {vref5}
+E_Eo3b         VODM3B VSSA VOP3B VON3B 1
+C_C3na         VSSA VON3A  {cl}  TC=0,0 
+V_Vref2         VREF2 VSSA {vref2}
+C_C5nc         VSSA VON5C  {cl}  TC=0,0 
+E_Eo6a         VODM6A VSSA VOP6A VON6A 1
+R_R4pd         VOP5 VOP4C  {ravg} TC=0,0 
+R_R1nd         VON2 VON1C  {ravg} TC=0,0 
+R_Rss2         VSSA VT2  {rss} TC=0,0 
+R_Rss7         VSSA VT7  {rss} TC=0,0 
+R_R0pd         VOP1 VOP0C  1e12 TC=0,0 
+E_Ein1         VIN1 VICM VIDM VREF1 -0.5
+C_C3pa         VSSA VOP3A  {cl}  TC=0,0 
+R_R5nd         VON6 VON5C  {ravg} TC=0,0 
+V_Vref3         VREF3 VSSA {vref3}
+R_R6pd         VOP7 VOP6C  {ravg} TC=0,0 
+R_R3nd         VON4 VON3C  {ravg} TC=0,0 
+I_Iss6         VT6 VSSA DC {iss6}  
+C_C3nb         VSSA VON3B  {cl}  TC=0,0 
+R_R3n         VON3 VDDA  {rl} TC=0,0 
+R_R1pc         VOP1C VOP1B  {ravg} TC=0,0 
+R_R3pa         VOP3A VOP3  {ravg} TC=0,0 
+E_Eo5a         VODM5A VSSA VOP5A VON5A 1
+R_Rss3         VSSA VT3  {rss} TC=0,0 
+C_C3pb         VSSA VOP3B  {cl}  TC=0,0 
+V_Vref4         VREF4 VSSA {vref4}
+E_Eo4b         VODM4B VSSA VOP4B VON4B 1
+C_C6p         VSSA VOP6  {cl}  TC=0,0 
+V_Vidm         VIDM VSSA DC 0 AC 0
++PULSE {vs1} {vs2} {td} {tr} {tr} {pw} {per}
+C_C3nc         VSSA VON3C  {cl}  TC=0,0 
+R_R0na         VON0A VOL  {ravg} TC=0,0 
+R_R3p         VOP3 VDDA  {rl} TC=0,0 
+R_R7na         VON7A VON7  1e12 TC=0,0 
+E_Eo0a         VODM0A VSSA VOP0A VON0A 1
+C_C6pa         VSSA VOP6A  {cl}  TC=0,0 
+C_C3pc         VSSA VOP3C  {cl}  TC=0,0 
+M_M5a         VON5 VIP5 VT5 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R1pa         VOP1A VOP1  {ravg} TC=0,0 
+R_R3pb         VOP3B VOP3A  {ravg} TC=0,0 
+E_Eo3c         VODM3C VSSA VOP3C VON3C 1
+.PARAM  w=2.35u iss6={iss1} vref1={-600m} td=0 vs1={(vstep/2)*(-1)} iss7={iss1}
++  ravg=4k vref2={-400m} vs2={(vstep/2)} vref3={-200m} vref4=0 vref5={200m}
++  vref6={400m} l=0.25u per=4000ns vref7={600m} m=2 pw={(per/4)} cl=25ff vstep=2
++  rl=4k rss=1e12 iss1=200u iss2={iss1} vssa=0.0 vdda=2.5 vicm=1.4 iss3={iss1}
++  iss4={iss1} tr={(per/4)} iss5={iss1}
+
+**** RESUMING testtran.cir ****
+.END
+

@@ -1,0 +1,603 @@
+
+**** 04/05/10 12:32:09 ****** PSpice 16.0.0 (March 2008) ****** ID# 1639680 **
+
+ ** Profile: "SCHEMATIC1-testbias"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "testbias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../interp1-pspicefiles/interp1.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.01\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INTERP1
+E_Eo7         VODM7 VSSA VOP7 VON7 1
+E_Eo6b         VODM6B VSSA VOP6B VON6B 1
+R_R5pa         VOP5A VOP5  {ravg} TC=0,0 
+R_R2na         VON2A VON2  {ravg} TC=0,0 
+R_R6na         VON6A VON6  {ravg} TC=0,0 
+C_C6n         VSSA VON6  {cl}  TC=0,0 
+E_Ein6         VIN6 VICM VIDM VREF6 -0.5
+E_Ein2         VIN2 VICM VIDM VREF2 -0.5
+C_C4n         VSSA VON4  {cl}  TC=0,0 
+C_C2p         VSSA VOP2  {cl}  TC=0,0 
+R_R4na         VON4A VON4  {ravg} TC=0,0 
+E_Eo7c         VODM7C VSSA VOP7C VON7C 1
+R_R1pd         VOP2 VOP1C  {ravg} TC=0,0 
+R_Rss6         VSSA VT6  {rss} TC=0,0 
+C_C6pb         VSSA VOP6B  {cl}  TC=0,0 
+R_R0nb         VON0B VON0A  {ravg} TC=0,0 
+R_R3pc         VOP3C VOP3B  {ravg} TC=0,0 
+R_R7nb         VON7B VON7A  {ravg} TC=0,0 
+C_C2n         VSSA VON2  {cl}  TC=0,0 
+E_Ein4         VIN4 VICM VIDM VREF4 -0.5
+E_Eo2a         VODM2A VSSA VOP2A VON2A 1
+R_R7n         VON7 VDDA  {rl} TC=0,0 
+C_C4na         VSSA VON4A  {cl}  TC=0,0 
+E_Eo5b         VODM5B VSSA VOP5B VON5B 1
+M_M5b         VOP5 VIN5 VT5 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+V_Vol         VDDA VOL {iss1*rl}
+R_R4nb         VON4B VON4A  {ravg} TC=0,0 
+E_Eo4c         VODM4C VSSA VOP4C VON4C 1
+R_R5pb         VOP5B VOP5A  {ravg} TC=0,0 
+R_R2nb         VON2B VON2A  {ravg} TC=0,0 
+C_C2pa         VSSA VOP2A  {cl}  TC=0,0 
+C_C6na         VSSA VON6A  {cl}  TC=0,0 
+R_R6nb         VON6B VON6A  {ravg} TC=0,0 
+C_C6pc         VSSA VOP6C  {cl}  TC=0,0 
+R_R5n         VON5 VDDA  {rl} TC=0,0 
+R_R0nc         VON0C VON0B  {ravg} TC=0,0 
+R_R7nc         VON7C VON7B  {ravg} TC=0,0 
+C_C2na         VSSA VON2A  {cl}  TC=0,0 
+E_Eo1         VODM1 VSSA VOP1 VON1 1
+M_M1a         VON1 VIP1 VT1 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+E_Eo3         VODM3 VSSA VOP3 VON3 1
+R_R3pd         VOP4 VOP3C  {ravg} TC=0,0 
+E_Eip3         VIP3 VICM VIDM VREF3 0.5
+C_C6nb         VSSA VON6B  {cl}  TC=0,0 
+R_R4nc         VON4C VON4B  {ravg} TC=0,0 
+E_Eo0b         VODM0B VSSA VOP0B VON0B 1
+R_R5pc         VOP5C VOP5B  {ravg} TC=0,0 
+C_C1n         VSSA VON1  {cl}  TC=0,0 
+R_R2nc         VON2C VON2B  {ravg} TC=0,0 
+R_R7p         VOP7 VDDA  {rl} TC=0,0 
+M_M4a         VON4 VIP4 VT4 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R6nc         VON6C VON6B  {ravg} TC=0,0 
+I_Iss5         VT5 VSSA DC {iss5}  
+C_C4nb         VSSA VON4B  {cl}  TC=0,0 
+C_C2pb         VSSA VOP2B  {cl}  TC=0,0 
+C_C4p         VSSA VOP4  {cl}  TC=0,0 
+E_Eo6c         VODM6C VSSA VOP6C VON6C 1
+E_Eo7b         VODM7B VSSA VOP7B VON7B 1
+R_R5p         VOP5 VDDA  {rl} TC=0,0 
+C_C2nb         VSSA VON2B  {cl}  TC=0,0 
+V_Vdda         VDDA 0 {vdda}
+R_R2pa         VOP2A VOP2  {ravg} TC=0,0 
+R_R2n         VON2 VDDA  {rl} TC=0,0 
+C_C6nc         VSSA VON6C  {cl}  TC=0,0 
+C_C4nc         VSSA VON4C  {cl}  TC=0,0 
+R_R4nd         VON5 VON4C  {ravg} TC=0,0 
+R_R0nd         VON1 VON0C  1e12 TC=0,0 
+C_C1na         VSSA VON1A  {cl}  TC=0,0 
+C_C2pc         VSSA VOP2C  {cl}  TC=0,0 
+C_C4pa         VSSA VOP4A  {cl}  TC=0,0 
+E_Eo2b         VODM2B VSSA VOP2B VON2B 1
+R_R7nd         VDDA VON7C  {ravg} TC=0,0 
+E_Eo4         VODM4 VSSA VOP4 VON4 1
+R_R5pd         VOP6 VOP5C  {ravg} TC=0,0 
+R_R2nd         VON3 VON2C  {ravg} TC=0,0 
+C_C5p         VSSA VOP5  {cl}  TC=0,0 
+E_Eo5c         VODM5C VSSA VOP5C VON5C 1
+C_C2nc         VSSA VON2C  {cl}  TC=0,0 
+C_C1p         VSSA VOP1  {cl}  TC=0,0 
+M_M4b         VOP4 VIN4 VT4 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+E_Eo1c         VODM1C VSSA VOP1C VON1C 1
+R_R2p         VOP2 VDDA  {rl} TC=0,0 
+R_R6nd         VON7 VON6C  {ravg} TC=0,0 
+E_Eip5         VIP5 VICM VIDM VREF5 0.5
+M_M7a         VON7 VIP7 VT7 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R6n         VON6 VDDA  {rl} TC=0,0 
+E_Eo1b         VODM1B VSSA VOP1B VON1B 1
+R_R1p         VOP1 VDDA  {rl} TC=0,0 
+E_Eip7         VIP7 VICM VIDM VREF7 0.5
+R_R2pb         VOP2B VOP2A  {ravg} TC=0,0 
+M_M1b         VOP1 VIN1 VT1 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+C_C1nb         VSSA VON1B  {cl}  TC=0,0 
+R_Rss5         VSSA VT5  {rss} TC=0,0 
+E_Eip1         VIP1 VICM VIDM VREF1 0.5
+C_C4pb         VSSA VOP4B  {cl}  TC=0,0 
+C_C1pc         VSSA VOP1C  {cl}  TC=0,0 
+R_R7pa         VOP7A VOP7  1e12 TC=0,0 
+E_Eo1a         VODM1A VSSA VOP1A VON1A 1
+M_M2a         VON2 VIP2 VT2 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+V_Vref7         VREF7 VSSA {vref7}
+C_C5pa         VSSA VOP5A  {cl}  TC=0,0 
+E_Eo6         VODM6 VSSA VOP6 VON6 1
+E_Eo7a         VODM7A VSSA VOP7A VON7A 1
+E_Eo0c         VODM0C VSSA VOP0C VON0C 1
+I_Iss4         VT4 VSSA DC {iss4}  
+R_R2pc         VOP2C VOP2B  {ravg} TC=0,0 
+R_R6p         VOP6 VDDA  {rl} TC=0,0 
+V_Vref6         VREF6 VSSA {vref6}
+C_C1nc         VSSA VON1C  {cl}  TC=0,0 
+M_M7b         VOP7 VIN7 VT7 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+C_C5pb         VSSA VOP5B  {cl}  TC=0,0 
+C_C4pc         VSSA VOP4C  {cl}  TC=0,0 
+M_M3a         VON3 VIP3 VT3 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+I_Iss1         VT1 VSSA DC {iss1}  
+R_R4n         VON4 VDDA  {rl} TC=0,0 
+R_R4pa         VOP4A VOP4  {ravg} TC=0,0 
+R_R1na         VON1A VON1  {ravg} TC=0,0 
+C_C1pb         VSSA VOP1B  {cl}  TC=0,0 
+R_R5na         VON5A VON5  {ravg} TC=0,0 
+R_R6pa         VOP6A VOP6  {ravg} TC=0,0 
+V_Vssa         VSSA 0 {vssa}
+R_R3na         VON3A VON3  {ravg} TC=0,0 
+R_R7pb         VOP7B VOP7A  {ravg} TC=0,0 
+C_C5n         VSSA VON5  {cl}  TC=0,0 
+E_Eo5         VODM5 VSSA VOP5 VON5 1
+R_R0pa         VOP0A VDDA  {ravg} TC=0,0 
+E_Ein3         VIN3 VICM VIDM VREF3 -0.5
+M_M2b         VOP2 VIN2 VT2 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_Rss1         VSSA VT1  {rss} TC=0,0 
+R_R2pd         VOP3 VOP2C  {ravg} TC=0,0 
+E_Eo2c         VODM2C VSSA VOP2C VON2C 1
+E_Eo3a         VODM3A VSSA VOP3A VON3A 1
+C_C7p         VSSA VOP7  {cl}  TC=0,0 
+R_R1n         VON1 VDDA  {rl} TC=0,0 
+C_C5pc         VSSA VOP5C  {cl}  TC=0,0 
+R_R4p         VOP4 VDDA  {rl} TC=0,0 
+C_C1pa         VSSA VOP1A  {cl}  TC=0,0 
+R_R7pc         VOP7C VOP7B  {ravg} TC=0,0 
+C_C5na         VSSA VON5A  {cl}  TC=0,0 
+R_R4pb         VOP4B VOP4A  {ravg} TC=0,0 
+R_Rss4         VSSA VT4  {rss} TC=0,0 
+M_M3b         VOP3 VIN3 VT3 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+M_M6a         VON6 VIP6 VT6 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R1nb         VON1B VON1A  {ravg} TC=0,0 
+I_Iss7         VT7 VSSA DC {iss7}  
+R_R5nb         VON5B VON5A  {ravg} TC=0,0 
+R_R6pb         VOP6B VOP6A  {ravg} TC=0,0 
+E_Eip6         VIP6 VICM VIDM VREF6 0.5
+R_R3nb         VON3B VON3A  {ravg} TC=0,0 
+I_Iss2         VT2 VSSA DC {iss2}  
+R_R0pb         VOP0B VOP0A  {ravg} TC=0,0 
+E_Eip2         VIP2 VICM VIDM VREF2 0.5
+E_Eo4a         VODM4A VSSA VOP4A VON4A 1
+R_R1pb         VOP1B VOP1A  {ravg} TC=0,0 
+C_C3n         VSSA VON3  {cl}  TC=0,0 
+E_Ein5         VIN5 VICM VIDM VREF5 -0.5
+R_R4pc         VOP4C VOP4B  {ravg} TC=0,0 
+R_R1nc         VON1C VON1B  {ravg} TC=0,0 
+V_Vicm         VICM VSSA {vicm}
+C_C5nb         VSSA VON5B  {cl}  TC=0,0 
+R_R5nc         VON5C VON5B  {ravg} TC=0,0 
+C_C7n         VSSA VON7  {cl}  TC=0,0 
+R_R6pc         VOP6C VOP6B  {ravg} TC=0,0 
+R_R3nc         VON3C VON3B  {ravg} TC=0,0 
+I_Iss3         VT3 VSSA DC {iss3}  
+R_R0pc         VOP0C VOP0B  {ravg} TC=0,0 
+C_C3p         VSSA VOP3  {cl}  TC=0,0 
+E_Eo2         VODM2 VSSA VOP2 VON2 1
+M_M6b         VOP6 VIN6 VT6 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R7pd         VOL VOP7C  {ravg} TC=0,0 
+E_Eip4         VIP4 VICM VIDM VREF4 0.5
+V_Vref1         VREF1 VSSA {vref1}
+E_Ein7         VIN7 VICM VIDM VREF7 -0.5
+V_Vref5         VREF5 VSSA {vref5}
+E_Eo3b         VODM3B VSSA VOP3B VON3B 1
+C_C3na         VSSA VON3A  {cl}  TC=0,0 
+V_Vref2         VREF2 VSSA {vref2}
+C_C5nc         VSSA VON5C  {cl}  TC=0,0 
+E_Eo6a         VODM6A VSSA VOP6A VON6A 1
+R_R4pd         VOP5 VOP4C  {ravg} TC=0,0 
+R_R1nd         VON2 VON1C  {ravg} TC=0,0 
+R_Rss2         VSSA VT2  {rss} TC=0,0 
+R_Rss7         VSSA VT7  {rss} TC=0,0 
+R_R0pd         VOP1 VOP0C  1e12 TC=0,0 
+E_Ein1         VIN1 VICM VIDM VREF1 -0.5
+C_C3pa         VSSA VOP3A  {cl}  TC=0,0 
+R_R5nd         VON6 VON5C  {ravg} TC=0,0 
+V_Vref3         VREF3 VSSA {vref3}
+R_R6pd         VOP7 VOP6C  {ravg} TC=0,0 
+R_R3nd         VON4 VON3C  {ravg} TC=0,0 
+I_Iss6         VT6 VSSA DC {iss6}  
+C_C3nb         VSSA VON3B  {cl}  TC=0,0 
+R_R3n         VON3 VDDA  {rl} TC=0,0 
+R_R1pc         VOP1C VOP1B  {ravg} TC=0,0 
+R_R3pa         VOP3A VOP3  {ravg} TC=0,0 
+E_Eo5a         VODM5A VSSA VOP5A VON5A 1
+R_Rss3         VSSA VT3  {rss} TC=0,0 
+C_C3pb         VSSA VOP3B  {cl}  TC=0,0 
+V_Vref4         VREF4 VSSA {vref4}
+E_Eo4b         VODM4B VSSA VOP4B VON4B 1
+C_C6p         VSSA VOP6  {cl}  TC=0,0 
+V_Vidm         VIDM VSSA DC 0 AC 1
++PULSE {vs1} {vs2} {td} {tr} {tr} {pw} {per}
+C_C3nc         VSSA VON3C  {cl}  TC=0,0 
+R_R0na         VON0A VOL  {ravg} TC=0,0 
+R_R3p         VOP3 VDDA  {rl} TC=0,0 
+R_R7na         VON7A VON7  1e12 TC=0,0 
+E_Eo0a         VODM0A VSSA VOP0A VON0A 1
+C_C6pa         VSSA VOP6A  {cl}  TC=0,0 
+C_C3pc         VSSA VOP3C  {cl}  TC=0,0 
+M_M5a         VON5 VIP5 VT5 VSSA N  
++ L={l}  
++ W={w}          
++ M={m}
+R_R1pa         VOP1A VOP1  {ravg} TC=0,0 
+R_R3pb         VOP3B VOP3A  {ravg} TC=0,0 
+E_Eo3c         VODM3C VSSA VOP3C VON3C 1
+.PARAM  iss6={iss1} w=2.35u iss7={iss1} vs1={(vstep/2)*(-1)} td=0 vref1={-600m}
++  vs2={(vstep/2)} vref2={-400m} ravg=4000k vref3={-200m} vref4=0 vref5={200m}
++  per=400ns l=0.25u vref6={400m} pw={(per/4)} m=2 vref7={600m} cl=25ff rl=4k
++  vstep=2 iss1=200u rss=1e12 vdda=2.5 vssa=0.0 iss2={iss1} iss3={iss1} vicm=1.4
++  tr={(per/4)} iss4={iss1} iss5={iss1}
+
+**** RESUMING testbias.cir ****
+.END
+
+**** 04/05/10 12:32:09 ****** PSpice 16.0.0 (March 2008) ****** ID# 1639680 **
+
+ ** Profile: "SCHEMATIC1-testbias"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               N               
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   31.622780E-12 
+          WD   12.328810E-09 
+         VTO     .423825     
+          KP  250.104800E-06 
+       GAMMA     .431731     
+         PHI     .7          
+      LAMBDA    0            
+         RSH    4.062439E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .5          
+        PBSW     .5          
+          CJ    1.812110E-03 
+        CJSW  534.133700E-12 
+          MJ     .328255     
+        MJSW     .5          
+        CGSO  620.000000E-12 
+        CGDO  620.000000E-12 
+        CGBO  100.000000E-12 
+        NSUB  100.000000E+15 
+         NFS    1.000000E+12 
+         TOX    5.700000E-09 
+          XJ  300.000000E-09 
+          UO  425.6466       
+       UCRIT   10.000000E+03 
+        VMAX   82.878510E+03 
+       DELTA    0            
+       THETA     .175405     
+         ETA    0            
+       KAPPA     .168678     
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 04/05/10 12:32:09 ****** PSpice 16.0.0 (March 2008) ****** ID# 1639680 **
+
+ ** Profile: "SCHEMATIC1-testbias"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VOL)    1.7000  (  VT1)     .9914  (  VT2)     .8965  (  VT3)     .8428      
+
+(  VT4)     .8334  (  VT5)     .8428  (  VT6)     .8965  (  VT7)     .9914      
+
+( VDDA)    2.5000  ( VICM)    1.4000  ( VIDM)    0.0000  ( VIN1)    1.1000      
+
+( VIN2)    1.2000  ( VIN3)    1.3000  ( VIN4)    1.4000  ( VIN5)    1.5000      
+
+( VIN6)    1.6000  ( VIN7)    1.7000  ( VIP1)    1.7000  ( VIP2)    1.6000      
+
+( VIP3)    1.5000  ( VIP4)    1.4000  ( VIP5)    1.3000  ( VIP6)    1.2000      
+
+( VIP7)    1.1000  ( VON1)    1.7000  ( VON2)    1.7019  ( VON3)    1.8358      
+
+( VON4)    2.1000  ( VON5)    2.3642  ( VON6)    2.4981  ( VON7)    2.5000      
+
+( VOP1)    2.5000  ( VOP2)    2.4981  ( VOP3)    2.3642  ( VOP4)    2.1000      
+
+( VOP5)    1.8358  ( VOP6)    1.7019  ( VOP7)    1.7000  ( VSSA)    0.0000      
+
+(VODM1)     .8000  (VODM2)     .7962  (VODM3)     .5284  (VODM4)-444.1E-18      
+
+(VODM5)    -.5284  (VODM6)    -.7962  (VODM7)    -.8000  (VON0A)    1.7000      
+
+(VON0B)    1.7000  (VON0C)    1.7000  (VON1A)    1.7005  (VON1B)    1.7009      
+
+(VON1C)    1.7014  (VON2A)    1.7354  (VON2B)    1.7688  (VON2C)    1.8023      
+
+(VON3A)    1.9019  (VON3B)    1.9679  (VON3C)    2.0340  (VON4A)    2.1660      
+
+(VON4B)    2.2321  (VON4C)    2.2981  (VON5A)    2.3977  (VON5B)    2.4312      
+
+(VON5C)    2.4646  (VON6A)    2.4986  (VON6B)    2.4991  (VON6C)    2.4995      
+
+(VON7A)    2.5000  (VON7B)    2.5000  (VON7C)    2.5000  (VOP0A)    2.5000      
+
+(VOP0B)    2.5000  (VOP0C)    2.5000  (VOP1A)    2.4995  (VOP1B)    2.4991      
+
+(VOP1C)    2.4986  (VOP2A)    2.4646  (VOP2B)    2.4312  (VOP2C)    2.3977      
+
+(VOP3A)    2.2981  (VOP3B)    2.2321  (VOP3C)    2.1660  (VOP4A)    2.0340      
+
+(VOP4B)    1.9679  (VOP4C)    1.9019  (VOP5A)    1.8023  (VOP5B)    1.7688      
+
+(VOP5C)    1.7354  (VOP6A)    1.7014  (VOP6B)    1.7009  (VOP6C)    1.7005      
+
+(VOP7A)    1.7000  (VOP7B)    1.7000  (VOP7C)    1.7000  (VREF1)    -.6000      
+
+(VREF2)    -.4000  (VREF3)    -.2000  (VREF4)    0.0000  (VREF5)     .2000      
+
+(VREF6)     .4000  (VREF7)     .6000  (VODM0A)     .8000 (VODM0B)     .8000     
+
+(VODM0C)     .8000 (VODM1A)     .7990 (VODM1B)     .7981 (VODM1C)     .7972     
+
+(VODM2A)     .7293 (VODM2B)     .6623 (VODM2C)     .5953 (VODM3A)     .3963     
+
+(VODM3B)     .2642 (VODM3C)     .1321 (VODM4A)    -.1321 (VODM4B)    -.2642     
+
+(VODM4C)    -.3963 (VODM5A)    -.5953 (VODM5B)    -.6623 (VODM5C)    -.7293     
+
+(VODM6A)    -.7972 (VODM6B)    -.7981 (VODM6C)    -.7990 (VODM7A)    -.8000     
+
+(VODM7B)    -.8000 (VODM7C)    -.8000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vol       -1.377E-17
+    V_Vdda      -1.400E-03
+    V_Vref7      0.000E+00
+    V_Vref6      0.000E+00
+    V_Vssa       1.400E-03
+    V_Vicm       0.000E+00
+    V_Vref1      0.000E+00
+    V_Vref5      0.000E+00
+    V_Vref2      0.000E+00
+    V_Vref3      0.000E+00
+    V_Vref4      0.000E+00
+    V_Vidm       0.000E+00
+
+    TOTAL POWER DISSIPATION   3.50E-03  WATTS
+
+
+**** 04/05/10 12:32:09 ****** PSpice 16.0.0 (March 2008) ****** ID# 1639680 **
+
+ ** Profile: "SCHEMATIC1-testbias"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E_Eo7       E_Eo6b      E_Ein6      E_Ein2      E_Eo7c    
+V-SOURCE    -8.000E-01  -7.981E-01   2.000E-01  -2.000E-01  -8.000E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Ein4      E_Eo2a      E_Eo5b      E_Eo4c      E_Eo1     
+V-SOURCE     0.000E+00   7.293E-01  -6.623E-01  -3.963E-01   8.000E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo3       E_Eip3      E_Eo0b      E_Eo6c      E_Eo7b    
+V-SOURCE     5.284E-01   1.000E-01   8.000E-01  -7.990E-01  -8.000E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo2b      E_Eo4       E_Eo5c      E_Eo1c      E_Eip5    
+V-SOURCE     6.623E-01  -4.441E-16  -7.293E-01   7.972E-01  -1.000E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo1b      E_Eip7      E_Eip1      E_Eo1a      E_Eo6     
+V-SOURCE     7.981E-01  -3.000E-01   3.000E-01   7.990E-01  -7.962E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo7a      E_Eo0c      E_Eo5       E_Ein3      E_Eo2c    
+V-SOURCE    -8.000E-01   8.000E-01  -5.284E-01  -1.000E-01   5.953E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo3a      E_Eip6      E_Eip2      E_Eo4a      E_Ein5    
+V-SOURCE     3.963E-01  -2.000E-01   2.000E-01  -1.321E-01   1.000E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Eo2       E_Eip4      E_Ein7      E_Eo3b      E_Eo6a    
+V-SOURCE     7.962E-01   0.000E+00   3.000E-01   2.642E-01  -7.972E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+NAME         E_Ein1      E_Eo5a      E_Eo4b      E_Eo0a      E_Eo3c    
+V-SOURCE    -3.000E-01  -5.953E-01  -2.642E-01   8.000E-01   1.321E-01
+I-SOURCE     0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+
+**** MOSFETS
+
+
+NAME         M_M5b       M_M1a       M_M4a       M_M4b       M_M7a     
+MODEL        N           N           N           N           N         
+ID           1.66E-04    2.00E-04    1.00E-04    1.00E-04    1.62E-09 
+VGS          6.57E-01    7.09E-01    5.67E-01    5.67E-01    1.09E-01 
+VDS          9.93E-01    7.09E-01    1.27E+00    1.27E+00    1.51E+00 
+VBS         -8.43E-01   -9.91E-01   -8.33E-01   -8.33E-01   -9.91E-01 
+VTH          3.67E-01    3.69E-01    3.67E-01    3.67E-01    3.69E-01 
+VDSAT        2.25E-01    2.47E-01    1.77E-01    1.77E-01    3.23E-02 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           8.21E-04    8.37E-04    7.20E-04    7.20E-04    4.96E-08 
+GDS          2.02E-05    2.99E-05    1.05E-05    1.05E-05    1.21E-10 
+GMB          1.47E-05    9.71E-06    1.36E-05    1.36E-05    1.06E-09 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGDOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGBOV        2.50E-17    2.50E-17    2.50E-17    2.50E-17    2.50E-17 
+CGS          4.69E-15    4.69E-15    4.69E-15    4.69E-15    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00    1.14E-15 
+
+NAME         M_M1b       M_M2a       M_M7b       M_M3a       M_M2b     
+MODEL        N           N           N           N           N         
+ID           1.62E-09    2.00E-04    2.00E-04    1.66E-04    4.64E-07 
+VGS          1.09E-01    7.04E-01    7.09E-01    6.57E-01    3.04E-01 
+VDS          1.51E+00    8.05E-01    7.09E-01    9.93E-01    1.60E+00 
+VBS         -9.91E-01   -8.96E-01   -9.91E-01   -8.43E-01   -8.96E-01 
+VTH          3.69E-01    3.68E-01    3.69E-01    3.67E-01    3.68E-01 
+VDSAT        3.23E-02    2.45E-01    2.47E-01    2.25E-01    3.23E-02 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           4.96E-08    8.46E-04    8.37E-04    8.21E-04    1.43E-05 
+GDS          1.21E-10    2.76E-05    2.99E-05    2.02E-05    3.44E-08 
+GMB          1.06E-09    1.30E-05    9.71E-06    1.47E-05    2.76E-07 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGDOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGBOV        2.50E-17    2.50E-17    2.50E-17    2.50E-17    2.50E-17 
+CGS          0.00E+00    4.69E-15    4.69E-15    4.69E-15    0.00E+00 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          1.14E-15    0.00E+00    0.00E+00    0.00E+00    1.11E-15 
+
+NAME         M_M3b       M_M6a       M_M6b       M_M5a     
+MODEL        N           N           N           N         
+ID           3.39E-05    4.64E-07    2.00E-04    3.39E-05 
+VGS          4.57E-01    3.04E-01    7.04E-01    4.57E-01 
+VDS          1.52E+00    1.60E+00    8.05E-01    1.52E+00 
+VBS         -8.43E-01   -8.96E-01   -8.96E-01   -8.43E-01 
+VTH          3.67E-01    3.68E-01    3.68E-01    3.67E-01 
+VDSAT        1.06E-01    3.23E-02    2.45E-01    1.06E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           4.94E-04    1.43E-05    8.46E-04    4.94E-04 
+GDS          3.17E-06    3.44E-08    2.76E-05    3.17E-06 
+GMB          9.50E-06    2.76E-07    1.30E-05    9.50E-06 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGDOV        2.88E-15    2.88E-15    2.88E-15    2.88E-15 
+CGBOV        2.50E-17    2.50E-17    2.50E-17    2.50E-17 
+CGS          4.69E-15    0.00E+00    4.69E-15    4.69E-15 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    1.11E-15    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 04/05/10 12:32:09 ****** PSpice 16.0.0 (March 2008) ****** ID# 1639680 **
+
+ ** Profile: "SCHEMATIC1-testbias"  [ C:\DOCUMENTS AND SETTINGS\PHEEDLEY\MY DOCUMENTS\PSPICE\EXAMPLES\EEE232\interp1\interp1-pspicefi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-testdc"  [ D:\OneDrive\OneDrive - Asian Answers\Documentos\CSUS\EEE232\Projects\Project 2\adc_flash_4b_interp_fold\adc_flash_4b_interp_fold-pspicefiles\schematic1\testdc.sim ] 
+
+** Creating circuit file "testdc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../adc_flash_4b_interp_fold-pspicefiles/adc_flash_4b_interp_fold.lib" 
+* From [PSPICE NETLIST] section of D:\Users\Vladmachine\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vidm -1.2 1.2 0.1m 
+.OPTIONS ADVCONV
+.OPTIONS RELTOL= 0.0001
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

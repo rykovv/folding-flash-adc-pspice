@@ -1,0 +1,236 @@
+(ExpressProject "adc_flash_4b_interp_fold"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S027 (4012302)  [2/5/2022]-[05/08/22]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File "adc_flash_4b_interp_fold.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Board_sim_option "VHDL_flow")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\testac.sim"
+        (DisplayName "SCHEMATIC1-testac")
+        (Type "PSpice Profile"))
+      (Folder "Model Libraries"
+        (Sort User))
+      (Folder "Stimulus Files"
+        (Sort User))
+      (Folder "Include Files"
+        (Sort User))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\testtran.sim"
+        (DisplayName "SCHEMATIC1-testtran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\testdc.sim"
+        (DisplayName "SCHEMATIC1-testdc")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\testbias.sim"
+        (DisplayName "SCHEMATIC1-testbias")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\adc_flash_4b_interp_fold-pspicefiles\schematic1\testtran.sim"))
+    (DefaultLibraryBrowseDirectory "library\PSpice")
+    (PartMRUSelector
+      (E
+        (FullPartName "E.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+        (DeviceIndex "0"))
+      (C
+        (FullPartName "C.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+        (DeviceIndex "0"))
+      (L
+        (FullPartName "L.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+        (DeviceIndex "0"))
+      (PARAM
+        (FullPartName "PARAM.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+        (DeviceIndex "0"))
+      (VPULSE
+        (FullPartName "VPULSE.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+        (DeviceIndex "0"))
+      (VDC
+        (FullPartName "VDC.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+        (DeviceIndex "0"))
+      (R
+        (FullPartName "R.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+        (DeviceIndex "0"))
+      (IDC
+        (FullPartName "IDC.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+        (DeviceIndex "0"))
+      (MbreakP4
+        (FullPartName "MbreakP4.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+        (DeviceIndex "0"))
+      (MbreakN4
+        (FullPartName "MbreakN4.Normal")
+        (LibraryName
+           "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+        (DeviceIndex "0")))
+    (LastUsedLibraryBrowseDirectory
+       "C:\Cadence\SPB_16.01\tools\capture\library\pspice")
+    (MPSSessionName "pheedley")
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         ".\adc_flash_4b_interp_fold-pspicefiles\adc_flash_4b_interp_fold.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           ".\adc_flash_4b_interp_fold-pspicefiles\adc_flash_4b_interp_fold.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (MPSSessionName "Vladmachine")
+  (PartMRUSelector
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (MbreakN4
+      (FullPartName "MbreakN4.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakP4
+      (FullPartName "MbreakP4.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL_RE_FOREVER
+      (FullPartName "VPWL_RE_FOREVER.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.01\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\OneDrive\OneDrive - Asian Answers\Documentos\CSUS\EEE232\Projects\Project 2\adc_flash_4b_interp_fold\adc_flash_4b_interp_fold.dsn")
+      (Path "Design Resources"
+         "D:\OneDrive\OneDrive - Asian Answers\Documentos\CSUS\EEE232\Projects\Project 2\adc_flash_4b_interp_fold\adc_flash_4b_interp_fold.dsn"
+         "SCHEMATIC1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 0 0 0 200 0 350"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 630")
+        (Scroll "122 495")
+        (Zoom "164")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\ONEDRIVE - ASIAN ANSWERS\DOCUMENTOS\CSUS\EEE232\PROJECTS\PROJECT 2\ADC_FLASH_4B_INTERP_FOLD\ADC_FLASH_4B_INTERP_FOLD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "sources"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 630")
+        (Scroll "45 0")
+        (Zoom "156")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\ONEDRIVE - ASIAN ANSWERS\DOCUMENTOS\CSUS\EEE232\PROJECTS\PROJECT 2\ADC_FLASH_4B_INTERP_FOLD\ADC_FLASH_4B_INTERP_FOLD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "connections"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 630")
+        (Scroll "-141 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\ONEDRIVE - ASIAN ANSWERS\DOCUMENTOS\CSUS\EEE232\PROJECTS\PROJECT 2\ADC_FLASH_4B_INTERP_FOLD\ADC_FLASH_4B_INTERP_FOLD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "fold1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 630")
+        (Scroll "-141 100")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\ONEDRIVE - ASIAN ANSWERS\DOCUMENTOS\CSUS\EEE232\PROJECTS\PROJECT 2\ADC_FLASH_4B_INTERP_FOLD\ADC_FLASH_4B_INTERP_FOLD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Rladder"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1290 24 630")
+        (Scroll "-141 146")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\ONEDRIVE - ASIAN ANSWERS\DOCUMENTOS\CSUS\EEE232\PROJECTS\PROJECT 2\ADC_FLASH_4B_INTERP_FOLD\ADC_FLASH_4B_INTERP_FOLD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "pa3a")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (Folder "Logs"))

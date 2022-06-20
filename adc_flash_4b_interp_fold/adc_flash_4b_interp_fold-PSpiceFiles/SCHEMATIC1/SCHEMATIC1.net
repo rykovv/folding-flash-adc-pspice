@@ -1,0 +1,1259 @@
+* source ADC_FLASH_4B_INTERP_FOLD
+M_M31a         VON31 VIP31 V31T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M31b         VOP31 VIN31 V31T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL31a         VON31 VDDA  {rlp} TC=0,0 
+R_RL31b         VOP31 VDDA  {rlp} TC=0,0 
+M_M32a         VON32 VIP32 V32T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M32b         VOP32 VIN32 V32T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M33a         VON33 VIP33 V33T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M33b         VOP33 VIN33 V33T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M34a         VON34 VIP34 V34T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M34b         VOP34 VIN34 V34T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M35a         VON35 VIP35 V35T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M35b         VOP35 VIN35 V35T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL32a         VON32 VDDA  {rlp} TC=0,0 
+R_RL32b         VOP32 VDDA  {rlp} TC=0,0 
+R_RL33a         VON33 VDDA  {rlp} TC=0,0 
+R_RL33b         VOP33 VDDA  {rlp} TC=0,0 
+R_RL34a         VON34 VDDA  {rlp} TC=0,0 
+R_RL34b         VOP34 VDDA  {rlp} TC=0,0 
+R_RL35a         VON35 VDDA  {rlp} TC=0,0 
+R_RL35b         VOP35 VDDA  {rlp} TC=0,0 
+M_M36a         VON36 VIP36 V36T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M36b         VOP36 VIN36 V36T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL36a         VON36 VDDA  {rlp} TC=0,0 
+R_RL36b         VOP36 VDDA  {rlp} TC=0,0 
+R_R31pa         VOP31A VOP31  {ravg} TC=0,0 
+R_R31pb         VOP32 VOP31A  {ravg} TC=0,0 
+R_R32pa         VOP32A VOP32  {ravg} TC=0,0 
+R_R32pb         VOP33 VOP32A  {ravg} TC=0,0 
+R_R33pa         VOP33A VOP33  {ravg} TC=0,0 
+R_R33pb         VOP34 VOP33A  {ravg} TC=0,0 
+R_R34pa         VOP34A VOP34  {ravg} TC=0,0 
+R_R34pb         VOP35 VOP34A  {ravg} TC=0,0 
+R_R35pa         VOP35A VOP35  {ravg} TC=0,0 
+R_R35pb         VOP36 VOP35A  {ravg} TC=0,0 
+R_R36pa         VOP36A VOP36  {ravg} TC=0,0 
+R_R36pb         VOP37 VOP36A  {ravg} TC=0,0 
+R_R34na         VON34A VON34  {ravg} TC=0,0 
+R_R34nb         VON35 VON34A  {ravg} TC=0,0 
+R_R35na         VON35A VON35  {ravg} TC=0,0 
+R_R35nb         VON36 VON35A  {ravg} TC=0,0 
+R_R36na         VON36A VON36  {ravg} TC=0,0 
+R_R36nb         VON37 VON36A  {ravg} TC=0,0 
+R_R31na         VON31A VON31  {ravg} TC=0,0 
+R_R31nb         VON32 VON31A  {ravg} TC=0,0 
+R_R32na         VON32A VON32  {ravg} TC=0,0 
+R_R32nb         VON33 VON32A  {ravg} TC=0,0 
+R_R33na         VON33A VON33  {ravg} TC=0,0 
+R_R33nb         VON34 VON33A  {ravg} TC=0,0 
+C_C31p         VSSA VOP31  {clp}  TC=0,0 
+C_C31pa         VSSA VOP31A  {clp}  TC=0,0 
+C_C31n         VSSA VON31  {clp}  TC=0,0 
+C_C31na         VSSA VON31A  {clp}  TC=0,0 
+C_C32p         VSSA VOP32  {clp}  TC=0,0 
+C_C32pa         VSSA VOP32A  {clp}  TC=0,0 
+C_C32n         VSSA VON32  {clp}  TC=0,0 
+C_C32na         VSSA VON32A  {clp}  TC=0,0 
+C_C33p         VSSA VOP33  {clp}  TC=0,0 
+C_C33pa         VSSA VOP33A  {clp}  TC=0,0 
+C_C33n         VSSA VON33  {clp}  TC=0,0 
+C_C33na         VSSA VON33A  {clp}  TC=0,0 
+C_C35p         VSSA VOP35  {clp}  TC=0,0 
+C_C35pa         VSSA VOP35A  {clp}  TC=0,0 
+C_C36p         VSSA VOP36  {clp}  TC=0,0 
+C_C36pa         VSSA VOP36A  {clp}  TC=0,0 
+C_C34p         VSSA VOP34  {clp}  TC=0,0 
+C_C34pa         VSSA VOP34A  {clp}  TC=0,0 
+C_C34n         VSSA VON34  {clp}  TC=0,0 
+C_C34na         VSSA VON34A  {clp}  TC=0,0 
+C_C35n         VSSA VON35  {clp}  TC=0,0 
+C_C35na         VSSA VON35A  {clp}  TC=0,0 
+C_C36n         VSSA VON36  {clp}  TC=0,0 
+C_C36na         VSSA VON36A  {clp}  TC=0,0 
+E_Eo31         VODM31 VSSA VOP31 VON31 1
+E_Eo31a         VODM31A VSSA VOP31A VON31A 1
+E_Eo32a         VODM32A VSSA VOP32A VON32A 1
+E_Eo32         VODM32 VSSA VOP32 VON32 1
+E_Eo33a         VODM33A VSSA VOP33A VON33A 1
+E_Eo33         VODM33 VSSA VOP33 VON33 1
+E_Eo35a         VODM35A VSSA VOP35A VON35A 1
+E_Eo35         VODM35 VSSA VOP35 VON35 1
+E_Eo36a         VODM36A VSSA VOP36A VON36A 1
+E_Eo36         VODM36 VSSA VOP36 VON36 1
+E_Eo34a         VODM34A VSSA VOP34A VON34A 1
+E_Eo34         VODM34 VSSA VOP34 VON34 1
+R_R30na         VON30A VOL3  {ravg} TC=0,0 
+R_R30nb         VON31 VON30A  {ravg} TC=0,0 
+R_R30pa         VOP30A VDDA  {ravg} TC=0,0 
+R_R30pb         VOP31 VOP30A  {ravg} TC=0,0 
+V_Vol3         VDDA VOL3 {2*ib3*rlp}
+E_Eo30a         VODM30A VSSA VOP30A VON30A 1
+M_M31t         V31T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M32t         V32T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M33t         V33T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M34t         V34T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M35t         V35T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M36t         V36T VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+C_C30pa         VSSA VOP30A  {clp}  TC=0,0 
+C_C30na         VSSA VON30A  {clp}  TC=0,0 
+M_M30ta         VBN3A VBN3A VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt0}
+M_M26t         V26T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL23b         VOP23 VDDA  {rlp} TC=0,0 
+R_RL23a         VON23 VDDA  {rlp} TC=0,0 
+M_M21t         V21T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M25a         VON25 VIP25 V25T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL24b         VOP24 VDDA  {rlp} TC=0,0 
+R_RL21a         VON21 VDDA  {rlp} TC=0,0 
+M_M27b         VOP27 VIN27 V27T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL22b         VOP22 VDDA  {rlp} TC=0,0 
+M_M26b         VOP26 VIN26 V26T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL25b         VOP25 VDDA  {rlp} TC=0,0 
+M_M20t         VBN2 VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt0}
+M_M23t         V23T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M21a         VON21 VIP21 V21T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M25b         VOP25 VIN25 V25T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M24t         V24T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL21b         VOP21 VDDA  {rlp} TC=0,0 
+M_M21b         VOP21 VIN21 V21T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M23a         VON23 VIP23 V23T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M22b         VOP22 VIN22 V22T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL24a         VON24 VDDA  {rlp} TC=0,0 
+M_M22a         VON22 VIP22 V22T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M22t         V22T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M26a         VON26 VIP26 V26T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL25a         VON25 VDDA  {rlp} TC=0,0 
+M_M23b         VOP23 VIN23 V23T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M24b         VOP24 VIN24 V24T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL26a         VON26 VDDA  {rlp} TC=0,0 
+R_RL27b         VOP27 VDDA  {rlp} TC=0,0 
+M_M24a         VON24 VIP24 V24T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL26b         VOP26 VDDA  {rlp} TC=0,0 
+R_RL27a         VON27 VDDA  {rlp} TC=0,0 
+M_M27a         VON27 VIP27 V27T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M25t         V25T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M27t         V27T VBN2 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL22a         VON22 VDDA  {rlp} TC=0,0 
+R_R25pb         VOP26 VOP25A  {ravg} TC=0,0 
+E_Eo22         VODM22 VSSA VOP22 VON22 1
+R_R24pb         VOP25 VOP24A  {ravg} TC=0,0 
+E_Eo20a         VODM20A VSSA VOP20A VON20A 1
+C_C20pa         VSSA VOP20A  {clp}  TC=0,0 
+C_C23p         VSSA VOP23  {clp}  TC=0,0 
+E_Eo27         VODM27 VSSA VOP27 VON27 1
+C_C21pa         VSSA VOP21A  {clp}  TC=0,0 
+R_R24pa         VOP24A VOP24  {ravg} TC=0,0 
+E_Eo24         VODM24 VSSA VOP24 VON24 1
+E_Eo25a         VODM25A VSSA VOP25A VON25A 1
+V_Vol2         VDDA VOL2 {2*ib2*rlp}
+C_C26pa         VSSA VOP26A  {clp}  TC=0,0 
+R_R26nb         VON27 VON26A  {ravg} TC=0,0 
+C_C22na         VSSA VON22A  {clp}  TC=0,0 
+E_Eo26a         VODM26A VSSA VOP26A VON26A 1
+R_R26na         VON26A VON26  {ravg} TC=0,0 
+C_C25pa         VSSA VOP25A  {clp}  TC=0,0 
+R_R27nb         VDDA VON27A  {ravg} TC=0,0 
+R_R25pa         VOP25A VOP25  {ravg} TC=0,0 
+C_C26p         VSSA VOP26  {clp}  TC=0,0 
+R_R21nb         VON22 VON21A  {ravg} TC=0,0 
+E_Eo23         VODM23 VSSA VOP23 VON23 1
+E_Eo24a         VODM24A VSSA VOP24A VON24A 1
+C_C22pa         VSSA VOP22A  {clp}  TC=0,0 
+C_C24pa         VSSA VOP24A  {clp}  TC=0,0 
+C_C27n         VSSA VON27  {clp}  TC=0,0 
+E_Eo25         VODM25 VSSA VOP25 VON25 1
+E_Eo21a         VODM21A VSSA VOP21A VON21A 1
+R_R26pa         VOP26A VOP26  {ravg} TC=0,0 
+C_C27na         VSSA VON27A  {clp}  TC=0,0 
+R_R24nb         VON25 VON24A  {ravg} TC=0,0 
+R_R20pa         VOP20A VDDA  {ravg} TC=0,0 
+C_C27p         VSSA VOP27  {clp}  TC=0,0 
+R_R21pa         VOP21A VOP21  {ravg} TC=0,0 
+R_R22pb         VOP23 VOP22A  {ravg} TC=0,0 
+R_R21na         VON21A VON21  {ravg} TC=0,0 
+E_Eo27a         VODM27A VSSA VOP27A VON27A 1
+R_R23na         VON23A VON23  {ravg} TC=0,0 
+C_C20na         VSSA VON20A  {clp}  TC=0,0 
+C_C23na         VSSA VON23A  {clp}  TC=0,0 
+R_R20pb         VOP21 VOP20A  {ravg} TC=0,0 
+R_R25na         VON25A VON25  {ravg} TC=0,0 
+R_R22na         VON22A VON22  {ravg} TC=0,0 
+R_R20nb         VON21 VON20A  {ravg} TC=0,0 
+C_C21n         VSSA VON21  {clp}  TC=0,0 
+E_Eo23a         VODM23A VSSA VOP23A VON23A 1
+C_C27pa         VSSA VOP27A  {clp}  TC=0,0 
+C_C24p         VSSA VOP24  {clp}  TC=0,0 
+C_C23n         VSSA VON23  {clp}  TC=0,0 
+C_C26na         VSSA VON26A  {clp}  TC=0,0 
+C_C26n         VSSA VON26  {clp}  TC=0,0 
+R_R27pb         VOL2 VOP27A  {ravg} TC=0,0 
+C_C22p         VSSA VOP22  {clp}  TC=0,0 
+C_C24na         VSSA VON24A  {clp}  TC=0,0 
+R_R26pb         VOP27 VOP26A  {ravg} TC=0,0 
+R_R21pb         VOP22 VOP21A  {ravg} TC=0,0 
+R_R23pb         VOP24 VOP23A  {ravg} TC=0,0 
+R_R25nb         VON26 VON25A  {ravg} TC=0,0 
+E_Eo21         VODM21 VSSA VOP21 VON21 1
+C_C21na         VSSA VON21A  {clp}  TC=0,0 
+R_R24na         VON24A VON24  {ravg} TC=0,0 
+R_R22pa         VOP22A VOP22  {ravg} TC=0,0 
+R_R22nb         VON23 VON22A  {ravg} TC=0,0 
+C_C23pa         VSSA VOP23A  {clp}  TC=0,0 
+C_C25p         VSSA VOP25  {clp}  TC=0,0 
+R_R23pa         VOP23A VOP23  {ravg} TC=0,0 
+E_Eo26         VODM26 VSSA VOP26 VON26 1
+R_R27pa         VOP27A VOP27  {ravg} TC=0,0 
+E_Eo22a         VODM22A VSSA VOP22A VON22A 1
+R_R20na         VON20A VOL2  {ravg} TC=0,0 
+C_C22n         VSSA VON22  {clp}  TC=0,0 
+C_C24n         VSSA VON24  {clp}  TC=0,0 
+R_R23nb         VON24 VON23A  {ravg} TC=0,0 
+C_C25na         VSSA VON25A  {clp}  TC=0,0 
+R_R27na         VON27A VON27  {ravg} TC=0,0 
+C_C25n         VSSA VON25  {clp}  TC=0,0 
+C_C21p         VSSA VOP21  {clp}  TC=0,0 
+R_RL312a         VON312 VDDA  {rlp} TC=0,0 
+M_M39b         VOP39 VIN39 V39T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL310b         VOP310 VDDA  {rlp} TC=0,0 
+M_M38a         VON38 VIP38 V38T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M30tb         VBN3B VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt0}
+M_M310t         V310T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M311t         V311T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M37a         VON37 VIP37 V37T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL37b         VOP37 VDDA  {rlp} TC=0,0 
+R_RL311a         VON311 VDDA  {rlp} TC=0,0 
+R_RL37a         VON37 VDDA  {rlp} TC=0,0 
+R_RL38a         VON38 VDDA  {rlp} TC=0,0 
+M_M310a         VON310 VIP310 V310T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL310a         VON310 VDDA  {rlp} TC=0,0 
+M_M38t         V38T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M312a         VON312 VIP312 V312T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL312b         VOP312 VDDA  {rlp} TC=0,0 
+R_RL38b         VOP38 VDDA  {rlp} TC=0,0 
+M_M310b         VOP310 VIN310 V310T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL39b         VOP39 VDDA  {rlp} TC=0,0 
+M_M37b         VOP37 VIN37 V37T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M311a         VON311 VIP311 V311T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M37t         V37T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL39a         VON39 VDDA  {rlp} TC=0,0 
+M_M312t         V312T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M39t         V39T VBN3B VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL311b         VOP311 VDDA  {rlp} TC=0,0 
+M_M311b         VOP311 VIN311 V311T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M39a         VON39 VIP39 V39T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M312b         VOP312 VIN312 V312T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M38b         VOP38 VIN38 V38T VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+C_C38pa         VSSA VOP38A  {clp}  TC=0,0 
+C_C38na         VSSA VON38A  {clp}  TC=0,0 
+C_C312n         VSSA VON312  {clp}  TC=0,0 
+R_R37nb         VON38 VON37A  {ravg} TC=0,0 
+C_C37pa         VSSA VOP37A  {clp}  TC=0,0 
+C_C38n         VSSA VON38  {clp}  TC=0,0 
+R_R37pa         VOP37A VOP37  {ravg} TC=0,0 
+C_C310n         VSSA VON310  {clp}  TC=0,0 
+R_R37na         VON37A VON37  {ravg} TC=0,0 
+R_R39na         VON39A VON39  {ravg} TC=0,0 
+R_R37pb         VOP38 VOP37A  {ravg} TC=0,0 
+R_R311pa         VOP311A VOP311  {ravg} TC=0,0 
+E_Eo310a         VODM310A VSSA VOP310A VON310A 1
+R_R312pa         VOP312A VOP312  {ravg} TC=0,0 
+R_R310na         VON310A VON310  {ravg} TC=0,0 
+C_C310pa         VSSA VOP310A  {clp}  TC=0,0 
+C_C311n         VSSA VON311  {clp}  TC=0,0 
+C_C311pa         VSSA VOP311A  {clp}  TC=0,0 
+R_R39nb         VON310 VON39A  {ravg} TC=0,0 
+R_R311pb         VOP312 VOP311A  {ravg} TC=0,0 
+C_C312pa         VSSA VOP312A  {clp}  TC=0,0 
+E_Eo311         VODM311 VSSA VOP311 VON311 1
+E_Eo38         VODM38 VSSA VOP38 VON38 1
+C_C310na         VSSA VON310A  {clp}  TC=0,0 
+E_Eo39a         VODM39A VSSA VOP39A VON39A 1
+E_Eo312a         VODM312A VSSA VOP312A VON312A 1
+R_R39pb         VOP310 VOP39A  {ravg} TC=0,0 
+C_C311na         VSSA VON311A  {clp}  TC=0,0 
+C_C39p         VSSA VOP39  {clp}  TC=0,0 
+R_R311na         VON311A VON311  {ravg} TC=0,0 
+E_Eo310         VODM310 VSSA VOP310 VON310 1
+R_R38pa         VOP38A VOP38  {ravg} TC=0,0 
+R_R38nb         VON39 VON38A  {ravg} TC=0,0 
+R_R39pa         VOP39A VOP39  {ravg} TC=0,0 
+C_C312na         VSSA VON312A  {clp}  TC=0,0 
+E_Eo38a         VODM38A VSSA VOP38A VON38A 1
+R_R312nb         VDDA VON312A  {ravg} TC=0,0 
+C_C39n         VSSA VON39  {clp}  TC=0,0 
+R_R38pb         VOP39 VOP38A  {ravg} TC=0,0 
+C_C312p         VSSA VOP312  {clp}  TC=0,0 
+C_C37n         VSSA VON37  {clp}  TC=0,0 
+C_C38p         VSSA VOP38  {clp}  TC=0,0 
+C_C39pa         VSSA VOP39A  {clp}  TC=0,0 
+R_R38na         VON38A VON38  {ravg} TC=0,0 
+C_C311p         VSSA VOP311  {clp}  TC=0,0 
+C_C39na         VSSA VON39A  {clp}  TC=0,0 
+R_R310nb         VON311 VON310A  {ravg} TC=0,0 
+E_Eo39         VODM39 VSSA VOP39 VON39 1
+R_R312na         VON312A VON312  {ravg} TC=0,0 
+E_Eo312         VODM312 VSSA VOP312 VON312 1
+E_Eo37a         VODM37A VSSA VOP37A VON37A 1
+C_C37na         VSSA VON37A  {clp}  TC=0,0 
+E_Eo37         VODM37 VSSA VOP37 VON37 1
+R_R311nb         VON312 VON311A  {ravg} TC=0,0 
+R_R310pb         VOP311 VOP310A  {ravg} TC=0,0 
+C_C310p         VSSA VOP310  {clp}  TC=0,0 
+R_R310pa         VOP310A VOP310  {ravg} TC=0,0 
+E_Eo311a         VODM311A VSSA VOP311A VON311A 1
+R_R312pb         VOL3 VOP312A  {ravg} TC=0,0 
+C_C37p         VSSA VOP37  {clp}  TC=0,0 
+M_M13ta         V13TA VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M13b         VOP13 VREFP13 V13TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL13a         VON13 VDDA  {rlp} TC=0,0 
+R_RL13b         VOP13 VDDA  {rlp} TC=0,0 
+M_M13c         VON13 VREFN13 V13TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M13a         VON13 VIP13 V13TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M13d         VOP13 VIN13 V13TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M13tb         V13TB VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M10t         VBN1 VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt0}
+E_Eo12         VODM12 VSSA VOP12 VON12 1
+C_C12p         VSSA VOP12  {clp}  TC=0,0 
+R_R13pa         VOP13A VOP13  {ravg} TC=0,0 
+C_C13p         VSSA VOP13  {clp}  TC=0,0 
+E_Eo13         VODM13 VSSA VOP13 VON13 1
+C_C14pa         VSSA VOP14A  {clp}  TC=0,0 
+R_R11pa         VOP11A VOP11  {ravg} TC=0,0 
+C_C11p         VSSA VOP11  {clp}  TC=0,0 
+R_R12na         VON12A VON12  {ravg} TC=0,0 
+C_C13pa         VSSA VOP13A  {clp}  TC=0,0 
+C_C11n         VSSA VON11  {clp}  TC=0,0 
+R_R11pb         VOP12 VOP11A  {ravg} TC=0,0 
+C_C12na         VSSA VON12A  {clp}  TC=0,0 
+R_R13na         VON13A VON13  {ravg} TC=0,0 
+R_R14na         VON14A VON14  {ravg} TC=0,0 
+E_Eo11         VODM11 VSSA VOP11 VON11 1
+E_Eo14         VODM14 VSSA VOP14 VON14 1
+R_R12pb         VOP13 VOP12A  {ravg} TC=0,0 
+C_C14p         VSSA VOP14  {clp}  TC=0,0 
+C_C11na         VSSA VON11A  {clp}  TC=0,0 
+E_Eo10a         VODM10A VSSA VOP10A VON10A 1
+C_C12n         VSSA VON12  {clp}  TC=0,0 
+R_R10pb         VOP11 VOP10A  {ravg} TC=0,0 
+R_R14pa         VOP14A VOP14  {ravg} TC=0,0 
+E_Eo11a         VODM11A VSSA VOP11A VON11A 1
+C_C13n         VSSA VON13  {clp}  TC=0,0 
+R_R10nb         VON11 VON10A  {ravg} TC=0,0 
+R_R10pa         VOP10A VDDA  {ravg} TC=0,0 
+C_C11pa         VSSA VOP11A  {clp}  TC=0,0 
+R_R13pb         VOP14 VOP13A  {ravg} TC=0,0 
+R_R11na         VON11A VON11  {ravg} TC=0,0 
+C_C14n         VSSA VON14  {clp}  TC=0,0 
+C_C14na         VSSA VON14A  {clp}  TC=0,0 
+E_Eo12a         VODM12A VSSA VOP12A VON12A 1
+C_C13na         VSSA VON13A  {clp}  TC=0,0 
+R_R12pa         VOP12A VOP12  {ravg} TC=0,0 
+R_R10na         VON10A VOL2  {ravg} TC=0,0 
+E_Eo13a         VODM13A VSSA VOP13A VON13A 1
+E_Eo14a         VODM14A VSSA VOP14A VON14A 1
+R_R14nb         VDDA VON14A  {ravg} TC=0,0 
+C_C10na         VSSA VON10A  {clp}  TC=0,0 
+C_C10pa         VSSA VOP10A  {clp}  TC=0,0 
+R_R12nb         VON13 VON12A  {ravg} TC=0,0 
+R_R14pb         VOL2 VOP14A  {ravg} TC=0,0 
+V_Vol1         VDDA VOL1 {4*ib1*rlp}
+R_R13nb         VON14 VON13A  {ravg} TC=0,0 
+C_C12pa         VSSA VOP12A  {clp}  TC=0,0 
+R_R11nb         VON12 VON11A  {ravg} TC=0,0 
+M_M11a         VON11 VIP11 V11TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M11ta         V11TA VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M11tb         V11TB VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M11d         VOP11 VIN11 V11TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M11c         VON11 VREFN11 V11TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M11b         VOP11 VREFP11 V11TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL11a         VON11 VDDA  {rlp} TC=0,0 
+R_RL11b         VOP11 VDDA  {rlp} TC=0,0 
+M_M14ta         V14TA VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M12c         VON12 VREFN12 V12TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M14tb         V14TB VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M12d         VOP12 VIN12 V12TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M12tb         V12TB VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+R_RL12b         VOP12 VDDA  {rlp} TC=0,0 
+R_RL12a         VON12 VDDA  {rlp} TC=0,0 
+M_M12ta         V12TA VBN1 VSSA VSSA N  
++ L={lpt}  
++ W={wpt}          
++ M={mpt}
+M_M14a         VON14 VIP14 V14TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL14a         VON14 VDDA  {rlp} TC=0,0 
+M_M12a         VON12 VIP12 V12TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M14c         VON14 VREFN14 V14TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M14b         VOP14 VREFP14 V14TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M12b         VOP12 VREFP12 V12TA VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+M_M14d         VOP14 VIN14 V14TB VSSA N  
++ L={lp}  
++ W={wp}          
++ M={mp}
+R_RL14b         VOP14 VDDA  {rlp} TC=0,0 
+M_MF11b         VOPF1 VINF11 VF11T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF11a         VONF1 VIPF11 VF11T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+E_EopF1         VODMF1 VOXF1 VOPF1 VSSA 1
+M_MF12a         VOPF1 VIPF12 VF12T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+R_RLF1p         VOPF1 VDDA  {rlf} TC=0,0 
+M_MF15a         VONF1 VIPF15 VF15T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF12b         VONF1 VINF12 VF12T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF14a         VOPF1 VIPF14 VF14T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+C_CLF1p         VSSA VOPF1  {clf}  TC=0,0 
+E_EonF1         VOXF1 VSSA VONF1 VSSA -1
+M_MF13b         VOPF1 VINF13 VF13T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF15b         VOPF1 VINF15 VF15T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF14b         VONF1 VINF14 VF14T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF13a         VONF1 VIPF13 VF13T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+R_RLF1n         VONF1 VDDA  {rlf} TC=0,0 
+C_CLF1n         VSSA VONF1  {clf}  TC=0,0 
+M_MF14t         VF14T VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF15t         VF15T VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF10t         VBNF1 VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft0}
+M_MF13t         VF13T VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF12t         VF12T VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF11t         VF11T VBNF1 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF22t         VF22T VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF23t         VF23T VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF24a         VOPF2 VIPF24 VF24T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+E_EonF2         VOXF2 VSSA VONF2 VSSA -1
+M_MF23b         VOPF2 VINF23 VF23T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF24b         VONF2 VINF24 VF24T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF21a         VONF2 VIPF21 VF21T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+C_CLF2p         VSSA VOPF2  {clf}  TC=0,0 
+M_MF20t         VBNF2 VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft0}
+M_MF22a         VOPF2 VIPF22 VF22T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF23a         VONF2 VIPF23 VF23T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF25t         VF25T VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF25b         VOPF2 VINF25 VF25T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF21t         VF21T VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF22b         VONF2 VINF22 VF22T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF24t         VF24T VBNF2 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+R_RLF2n         VONF2 VDDA  {rlf} TC=0,0 
+R_RLF2p         VOPF2 VDDA  {rlf} TC=0,0 
+M_MF25a         VONF2 VIPF25 VF25T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+E_EopF2         VODMF2 VOXF2 VOPF2 VSSA 1
+C_CLF2n         VSSA VONF2  {clf}  TC=0,0 
+M_MF21b         VOPF2 VINF21 VF21T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+C_CLF3n         VSSA VONF3  {clf}  TC=0,0 
+M_MF32b         VONF3 VINF32 VF32T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF35a         VONF3 VIPF35 VF35T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF34b         VONF3 VINF34 VF34T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF31b         VOPF3 VINF31 VF31T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF33b         VOPF3 VINF33 VF33T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF31t         VF31T VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF35t         VF35T VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF31a         VONF3 VIPF31 VF31T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+E_EonF3         VOXF3 VSSA VONF3 VSSA -1
+R_RLF3n         VONF3 VDDA  {rlf} TC=0,0 
+E_EopF3         VODMF3 VOXF3 VOPF3 VSSA 1
+M_MF32a         VOPF3 VIPF32 VF32T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF35b         VOPF3 VINF35 VF35T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF32t         VF32T VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF34t         VF34T VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF33a         VONF3 VIPF33 VF33T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+C_CLF3p         VSSA VOPF3  {clf}  TC=0,0 
+M_MF33t         VF33T VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft}
+M_MF34a         VOPF3 VIPF34 VF34T VSSA N  
++ L={lf}  
++ W={wf}          
++ M={mf}
+M_MF30t         VBNF3 VBNF3 VSSA VSSA N  
++ L={lft}  
++ W={wft}          
++ M={mft0}
+R_RLF3p         VOPF3 VDDA  {rlf} TC=0,0 
+R_Rref7         VREF7 VREF6  {rref} TC=0,0 
+R_Rref8         VREF8 VREF7  {rref} TC=0,0 
+R_Rref9         VREF9 VREF8  {rref} TC=0,0 
+R_Rref10         VREF10 VREF9  {rref} TC=0,0 
+R_Rref12         VREF12 VREF11  {rref} TC=0,0 
+R_Rref13         VREF13 VREF12  {rref} TC=0,0 
+R_Rref14         VREF14 VREF13  {rref} TC=0,0 
+R_Rref11         VREF11 VREF10  {rref} TC=0,0 
+R_Rref17         VREF17 VREF16  {rref} TC=0,0 
+R_Rref15         VREF15 VREF14  {rref} TC=0,0 
+R_Rref16         VREF16 VREF15  {rref} TC=0,0 
+R_Rref18         VREF18 VREF17  {rref} TC=0,0 
+R_Rref20         VREF20 VREF19  {rref} TC=0,0 
+R_Rref21         VREF21 VREF20  {rref} TC=0,0 
+R_Rref22         VREF22 VREF21  {rref} TC=0,0 
+R_Rref19         VREF19 VREF18  {rref} TC=0,0 
+R_Rip31         VOP21 VIP31  {rmin} TC=0,0 
+R_Rip32         VOP21A VIP32  {rmin} TC=0,0 
+R_Rip33         VOP22 VIP33  {rmin} TC=0,0 
+R_Rip34         VOP22A VIP34  {rmin} TC=0,0 
+R_Rip35         VOP23 VIP35  {rmin} TC=0,0 
+R_Rip36         VOP23A VIP36  {rmin} TC=0,0 
+R_Rip310         VOP25A VIP310  {rmin} TC=0,0 
+R_Rip312         VOP26A VIP312  {rmin} TC=0,0 
+R_Rip311         VOP26 VIP311  {rmin} TC=0,0 
+R_Rip37         VOP24 VIP37  {rmin} TC=0,0 
+R_Rip39         VOP25 VIP39  {rmin} TC=0,0 
+R_Rip38         VOP24A VIP38  {rmin} TC=0,0 
+R_Rin39         VON25 VIN39  {rmin} TC=0,0 
+R_Rin31         VON21 VIN31  {rmin} TC=0,0 
+R_Rin310         VON25A VIN310  {rmin} TC=0,0 
+R_Rin32         VON21A VIN32  {rmin} TC=0,0 
+R_Rin311         VON26 VIN311  {rmin} TC=0,0 
+R_Rin34         VON22A VIN34  {rmin} TC=0,0 
+R_Rin38         VON24A VIN38  {rmin} TC=0,0 
+R_Rin36         VON23A VIN36  {rmin} TC=0,0 
+R_Rin312         VON26A VIN312  {rmin} TC=0,0 
+R_Rin35         VON23 VIN35  {rmin} TC=0,0 
+R_Rin37         VON24 VIN37  {rmin} TC=0,0 
+R_Rin33         VON22 VIN33  {rmin} TC=0,0 
+R_Rip22         VOP11A VIP22  {rmin} TC=0,0 
+R_Rip26         VOP13A VIP26  {rmin} TC=0,0 
+R_Rin25         VON13 VIN25  {rmin} TC=0,0 
+R_Rin22         VON11A VIN22  {rmin} TC=0,0 
+R_Rin24         VON12A VIN24  {rmin} TC=0,0 
+R_Rin26         VON13A VIN26  {rmin} TC=0,0 
+R_Rin27         VON14 VIN27  {rmin} TC=0,0 
+R_Rip21         VOP11 VIP21  {rmin} TC=0,0 
+R_Rip24         VOP12A VIP24  {rmin} TC=0,0 
+R_Rin23         VON12 VIN23  {rmin} TC=0,0 
+R_Rip25         VOP13 VIP25  {rmin} TC=0,0 
+R_Rin21         VON11 VIN21  {rmin} TC=0,0 
+R_Rip23         VOP12 VIP23  {rmin} TC=0,0 
+R_Rip27         VOP14 VIP27  {rmin} TC=0,0 
+R_Rip11         VIP VIP11  {rmin} TC=0,0 
+R_Rin11         VIN VIN11  {rmin} TC=0,0 
+R_Rrefn11         VREF25 VREFN11  {rmin} TC=0,0 
+R_Rrefp11         VREF3 VREFP11  {rmin} TC=0,0 
+R_Rin12         VIN VIN12  {rmin} TC=0,0 
+R_Rrefn12         VREF17 VREFN12  {rmin} TC=0,0 
+R_Rrefp12         VREF11 VREFP12  {rmin} TC=0,0 
+R_Rip12         VIP VIP12  {rmin} TC=0,0 
+R_Rip13         VIP VIP13  {rmin} TC=0,0 
+R_Rin13         VIN VIN13  {rmin} TC=0,0 
+R_Rrefn13         VREF9 VREFN13  {rmin} TC=0,0 
+R_Rrefp13         VREF19 VREFP13  {rmin} TC=0,0 
+R_Rrefp14         VREF27 VREFP14  {rmin} TC=0,0 
+R_Rrefn14         VREF1 VREFN14  {rmin} TC=0,0 
+R_Rip14         VIP VIP14  {rmin} TC=0,0 
+R_Rin14         VIN VIN14  {rmin} TC=0,0 
+R_Rinf11         VON33 VINF11  {rmin} TC=0,0 
+R_Ripf11         VOP33 VIPF11  {rmin} TC=0,0 
+R_Rinf12         VON34A VINF12  {rmin} TC=0,0 
+R_Ripf12         VOP34A VIPF12  {rmin} TC=0,0 
+R_Ripf13         VOP36 VIPF13  {rmin} TC=0,0 
+R_Rinf13         VON36 VINF13  {rmin} TC=0,0 
+R_Rinf14         VON37A VINF14  {rmin} TC=0,0 
+R_Ripf14         VOP37A VIPF14  {rmin} TC=0,0 
+R_Rinf15         VON39 VINF15  {rmin} TC=0,0 
+R_Ripf15         VOP39 VIPF15  {rmin} TC=0,0 
+R_Rinf24         VON38 VINF24  {rmin} TC=0,0 
+R_Rinf25         VON39A VINF25  {rmin} TC=0,0 
+R_Rinf22         VON35 VINF22  {rmin} TC=0,0 
+R_Ripf25         VOP39A VIPF25  {rmin} TC=0,0 
+R_Ripf23         VOP36A VIPF23  {rmin} TC=0,0 
+R_Rinf21         VON33A VINF21  {rmin} TC=0,0 
+R_Ripf22         VOP35 VIPF22  {rmin} TC=0,0 
+R_Ripf21         VOP33A VIPF21  {rmin} TC=0,0 
+R_Ripf24         VOP38 VIPF24  {rmin} TC=0,0 
+R_Rinf23         VON36A VINF23  {rmin} TC=0,0 
+R_Ripf34         VOP38A VIPF34  {rmin} TC=0,0 
+R_Rinf33         VON37 VINF33  {rmin} TC=0,0 
+R_Ripf32         VOP35A VIPF32  {rmin} TC=0,0 
+R_Ripf35         VOP310 VIPF35  {rmin} TC=0,0 
+R_Ripf31         VOP34 VIPF31  {rmin} TC=0,0 
+R_Ripf33         VOP37 VIPF33  {rmin} TC=0,0 
+R_Rinf35         VON310 VINF35  {rmin} TC=0,0 
+R_Rinf31         VON34 VINF31  {rmin} TC=0,0 
+R_Rinf34         VON38A VINF34  {rmin} TC=0,0 
+R_Rinf32         VON35A VINF32  {rmin} TC=0,0 
+V_Vidm         VIDM VSSA DC 0 AC 1
++PULSE {-vref} {vref} {td} {tr} {tr} {pw} {per}
+V_Vssa         VSSA 0 {vssa}
+V_Vicm         VICM VSSA {vicm}
+V_Vrefp         VREFP VICM {vref/2}
+V_Vdda         VDDA 0 {vdda}
+V_Vrefn         VREFN VICM {-vref/2}
+E_Eip         VIP VICM VIDM VSSA 0.5
+E_Ein         VIN VICM VIDM VSSA -0.5
+I_Ib1         VDDA VBN1 DC {ib1}  
+I_Ib2         VDDA VBN2 DC {ib2}  
+I_Ib3a         VDDA VBN3A DC {ib3}  
+I_Ib3b         VDDA VBN3B DC {ib3}  
+I_Ibf1         VDDA VBNF1 DC {ibf}  
+I_Ibf2         VDDA VBNF2 DC {ibf}  
+I_Ibf3         VDDA VBNF3 DC {ibf}  
+R_Rref5         VREF5 VREF4  {rref} TC=0,0 
+R_Rref3         VREF3 VREF2  {rref} TC=0,0 
+R_Rref6         VREF6 VREF5  {rref} TC=0,0 
+R_Rref4         VREF4 VREF3  {rref} TC=0,0 
+R_Rref23         VREF23 VREF22  {rref} TC=0,0 
+R_Rref25         VREF25 VREF24  {rref} TC=0,0 
+R_Rref26         VREF26 VREF25  {rref} TC=0,0 
+R_Rref24         VREF24 VREF23  {rref} TC=0,0 
+R_Rref27         VREF27 VREF26  {rref} TC=0,0 
+R_Rref28         VREFN VREF27  {rref} TC=0,0 
+R_Rref1         VREF1 VREFP  {rref} TC=0,0 
+R_Rref2         VREF2 VREF1  {rref} TC=0,0 
+M_ML1_0         N1728936 N1728936 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m0}
+M_ML1_1         N1728963 N1728936 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m1}
+M_ML1_2         L1_B VOPF1 N1728963 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML1_3         L1_A VONF1 N1728963 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML1_13         L1_C CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML1_12         L1_D L1_C VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML1_11         L1_C L1_D VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML1_14         L1_D CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML1_8         L1_B L1_A VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML1_10         L1_D CLK1B L1_B VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+M_ML1_9         L1_C CLK1B L1_A VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+M_ML1_7         L1_A L1_B VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML1_15b         L1_A CLK1A L1_B VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+M_ML1_15a         L1_B CLK1A L1_A VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+I_Ibias_L1         N1728936 VSSA DC {ibias_L1}  
+M_ML1_16         L1_Q L1_QB VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML1_17         L1_Q L1_D VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML1_20         L1_QB L1_Q VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML1_21         L1_QB L1_C VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML1_18         L1_Q L1_D N1731831 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML1_19         N1731831 L1_QB VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML1_22         L1_QB L1_C N1732010 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML1_23         N1732010 L1_Q VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+V_Clk1a         CLK1A VSSA DC {vdda} 
++PULSE {vdda} {vssa} {tdla} {trl} {trl} {pwl} {perl}
+V_Clk1b         CLK1B VSSA DC {vssa} 
++PULSE {vssa} {vdda} {tdlb} {trl} {trl} {pwl} {perl}
+M_ML2_2         N1775142 VOPF2 N1775226 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML2_14         L2_D CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML2_3         N1775138 VONF2 N1775226 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML2_15a         N1775142 CLK1A N1775138 VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+M_ML2_7         N1775138 N1775142 VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML2_0         N1775210 N1775210 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m0}
+M_ML2_13         L2_C CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML2_15b         N1775138 CLK1A N1775142 VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+M_ML2_8         N1775142 N1775138 VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML2_1         N1775226 N1775210 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m1}
+M_ML2_12         L2_D L2_C VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML2_9         L2_C CLK1B N1775138 VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+I_Ibias_L2         N1775210 VSSA DC {ibias_L2}  
+M_ML2_11         L2_C L2_D VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML2_10         L2_D CLK1B N1775142 VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+M_ML2_20         L2_QB L2_Q VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML2_19         N1777351 L2_QB VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML2_17         L2_Q L2_D VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML2_22         L2_QB L2_C N1777355 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML2_16         L2_Q L2_QB VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML2_18         L2_Q L2_D N1777351 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML2_23         N1777355 L2_Q VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML2_21         L2_QB L2_C VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML3_3         N1779215 VONF3 N1779303 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML3_7         N1779215 N1779219 VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML3_9         L3_C CLK1B N1779215 VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+I_Ibias_L3         N1779287 VSSA DC {ibias_L3}  
+M_ML3_15a         N1779219 CLK1A N1779215 VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+M_ML3_14         L3_D CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML3_15b         N1779215 CLK1A N1779219 VSSA N  
++ L={l15}  
++ W={w15}          
++ M={m15}
+M_ML3_10         L3_D CLK1B N1779219 VSSA N  
++ L={l9}  
++ W={w9}          
++ M={m9}
+M_ML3_12         L3_D L3_C VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML3_8         N1779219 N1779215 VSSA VSSA N  
++ L={l7}  
++ W={w7}          
++ M={m7}
+M_ML3_1         N1779303 N1779287 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m1}
+M_ML3_13         L3_C CLK1B VDDA VDDA P  
++ L={l13}  
++ W={w13}          
++ M={m13}
+M_ML3_11         L3_C L3_D VDDA VDDA P  
++ L={l11}  
++ W={w11}          
++ M={m11}
+M_ML3_2         N1779219 VOPF3 N1779303 VDDA P  
++ L={l3}  
++ W={w3}          
++ M={m3}
+M_ML3_0         N1779287 N1779287 VDDA VDDA P  
++ L={l0}  
++ W={w0}          
++ M={m0}
+M_ML3_20         L3_QB L3_Q VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML3_16         L3_Q L3_QB VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML3_17         L3_Q L3_D VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML3_21         L3_QB L3_C VDDA VDDA P  
++ L={l16}  
++ W={w16}          
++ M={m16}
+M_ML3_19         N1781438 L3_QB VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML3_22         L3_QB L3_C N1781442 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML3_18         L3_Q L3_D N1781438 VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+M_ML3_23         N1781442 L3_Q VSSA VSSA N  
++ L={l18}  
++ W={w18}          
++ M={m18}
+.PARAM  l3=0.18u w11=0.9u perl=2n tdlb={0.5*perl} m9=2 w3=0.9u rlf=2k rref=1k
++  mft=8 ibias_l1=200u ibias_l2=200u vicm={vdda - 0.3} lf=0.18u per={perl*5000}
++  l18=0.18u vref=400m rmin=11u w16=0.36u ibias_l3=200u m18=1 l7=0.18u lft=1.8u
++  m7=28 w15=0.9u vssa=0 w7=0.18u pwl={perl/2 - trl} clf=10f mf=2 ibf=40u mft0=2
++  l9=0.18u w9=0.9u m3=2 ravg=10k m15=1 m0=2 rmax=1e12 wpt=10.8u tr={per/2}
++  trl=100p w18=0.36u m1=4 td=0 vdda=1.6 wft=10.8u l11=0.18u wp=1.3u rlp=3.2k
++  m16=1 lp=0.18u m11=2 mp=2 ib1=50u l13=0.18u tdla={0.5*perl - 20p} m13=2 pw=0
++  lpt=1.8u ib2=50u l15=0.18u w13=0.9u w0=3.6u mpt=8 ib3=50u l16=0.18u clp=10f
++  wf=9.54u mpt0=2 l0=1.8u
